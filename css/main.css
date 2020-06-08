@@ -6,8 +6,10 @@
 }
 
 body {
-  background: #479BB8;
+  background: #4a56bb;
   font-family: "Playfair Display", serif;
+  color: #2a2a2a;
+  font-size: 1.25em;
 }
 
 [class*="col-"] {
@@ -26,6 +28,7 @@ body {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 [class*="col-"] {
@@ -106,8 +109,8 @@ body {
   transform: rotate(-90deg);
   position: fixed;
   font-family: "Open Sans", sans-serif;
-  left: -80px;
-  top: 40%;
+  left: -100px;
+  top: 50%;
 }
 
 .mail {
@@ -135,7 +138,7 @@ nav > ul > li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #2a2a2a;
 }
 
 .selfie {
@@ -158,7 +161,7 @@ a {
 }
 
 .bold {
-  color: #479BB8;
+  color: #4a56bb;
   font-size: 2em;
   font-weight: 700;
 }
@@ -166,38 +169,6 @@ a {
 .live {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-}
-
-.rounded {
-  border-radius: 100px;
-}
-
-.span {
-  padding: 0;
-}
-
-.top-r {
-  border-top-right-radius: 100px;
-}
-
-.top-l {
-  border-top-left-radius: 100px;
-}
-
-.bottom-r {
-  border-bottom-right-radius: 100px;
-}
-
-.bottom-l {
-  border-bottom-left-radius: 100px;
-}
-
-.rad-l {
-  border-radius: 100px 0 0 100px;
-}
-
-.rad-r {
-  border-radius: 0 100px 100px 0;
 }
 
 .hidden-col {
@@ -210,19 +181,6 @@ a {
 
 .text-right {
   text-align: right;
-}
-
-.full-width {
-  margin-bottom: 0;
-}
-
-.full-width:last-child {
-  margin-bottom: 20px;
-}
-
-.space-off,
-.space-off:last-child {
-  margin-bottom: 0;
 }
 
 .progress {
@@ -249,7 +207,7 @@ a {
 }
 
 .progress progress::-moz-progress-bar {
-  background-color: #bce4f7;
+  background-color: #bacae6;
 }
 
 .progress progress::-webkit-progress-bar {
@@ -257,17 +215,20 @@ a {
 }
 
 .progress progress::-webkit-progress-value {
-  background-color: #bce4f7;
+  background-color: #bacae6;
 }
 
 .CTA {
-  background: #479BB8;
+  background: #f13b39;
+  font-family: "Open Sans", sans-serif;
   color: white;
   font-size: 1.25em;
   align-items: center;
   width: 350px;
   height: 70px;
   float: left;
+  z-index: 2;
+  position: relative;
 }
 
 .CTA > p {
@@ -275,10 +236,6 @@ a {
   padding-bottom: 20px;
   padding-left: 70px;
   padding-right: 70px;
-}
-
-.arrowRight {
-  display: none;
 }
 
 .social {
@@ -303,8 +260,41 @@ li {
 }
 
 .title {
-  color: #479BB8;
+  color: #4a56bb;
   font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+  padding: 20px 0px 20px 0px;
+  color: #4a56bb;
+}
+
+.view {
+  padding-top: 30px;
+  color: #2a2a2a;
+}
+
+.fa-arrow-right {
+  padding-left: 20px;
+}
+
+.bottom {
+  max-width: 80%;
+  min-width: 80%;
+}
+
+.tiktak {
+  position: absolute;
+  right: 100px;
+}
+
+.video {
+  transition: 0.5s ease-in-out;
+}
+
+.video:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 1350px) {

@@ -1,5 +1,12 @@
-$darkBlue: #479BB8;
+// $darkBlue: #479BB8;
+$black: #2a2a2a;
+$darkBlue: #4a56bb;
+$darkest: #1b4561;
 $lightBlue: #bce4f7;
+$pastelBlue:#bacae6;
+$gold: #F8D392;
+$red: #f13b39;
+$peach: #f47154;
 $playfair: 'Playfair Display', serif;
 $open:  'Open Sans', sans-serif;
 
@@ -13,6 +20,8 @@ $open:  'Open Sans', sans-serif;
 body{
     background: $darkBlue;
     font-family: $playfair;
+    color: $black;
+    font-size: 1.25em;
 }
 
 [class*="col-"] {
@@ -30,6 +39,7 @@ body{
   }
   .row {
       display: flex;
+      flex-wrap: wrap;
     }
     [class*="col-"] {
         margin-right: 20px;
@@ -74,8 +84,8 @@ body{
     transform: rotate(-90deg);
     position: fixed;
     font-family: $open;
-    left: -80px;
-    top: 40%;
+    left: -100px;
+    top: 50%;
 }
 
 .mail{
@@ -103,7 +113,7 @@ nav>ul>li{
 
 a{
     text-decoration: none;
-    color: black;
+    color: $black;
 }
 
 .selfie{
@@ -136,29 +146,10 @@ a{
     font-size: 20px;
 }
 
-.rounded {border-radius: 100px;}
-  .span{padding: 0;}
-  .top-r {border-top-right-radius: 100px;}
-  .top-l {border-top-left-radius: 100px;}
-  .bottom-r {border-bottom-right-radius: 100px;}
-  .bottom-l {border-bottom-left-radius: 100px;}
-  
-  .rad-l {border-radius: 100px 0 0 100px;}
-  .rad-r {border-radius: 0 100px 100px 0;}
-  
   .hidden-col {visibility: hidden;}
   
   .text-left {text-align: left;}
   .text-right {text-align: right;}
-  
-  .full-width { margin-bottom: 0; }
-  
-  .full-width:last-child { margin-bottom: 20px; }
-  
-  .space-off,
-  .space-off:last-child {
-    margin-bottom: 0;
-  }
 
   .progress {
     // transform: rotate(90deg);
@@ -189,25 +180,28 @@ a{
 
 	progress::-moz-progress-bar { 
         background-color: rgba(
-            $lightBlue, 1); 
+            $pastelBlue, 1); 
         }
 	progress::-webkit-progress-bar { 
         background-color: transparent; 
     }
 	progress::-webkit-progress-value { 
-        background-color: rgba($lightBlue, 1); 
+        background-color: rgba($pastelBlue, 1); 
     }
 
 }
 
 .CTA{
-    background: $darkBlue;
+    background: $red;
+    font-family: $open;
     color: white;
     font-size: 1.25em;
     align-items: center;
     width: 350px;
     height: 70px;
     float: left;
+    z-index: 2;
+    position: relative;
 }
 
 .CTA>p{
@@ -215,12 +209,6 @@ a{
     padding-bottom: 20px;    
     padding-left: 70px;
     padding-right: 70px;
-}
-
-.arrowRight{
-    display: none;
-    // display: inline;
-    // padding-left: 20px;
 }
 
 .social{
@@ -248,6 +236,40 @@ li{
     color: $darkBlue;
     font-size: 2em;
 }
+
+h3{
+    font-size: 1.5em;
+    padding: 20px 0px 20px 0px;
+    color: $darkBlue;
+}
+
+.view{
+    padding-top: 30px;
+    color: $black;
+}
+
+.fa-arrow-right{
+    padding-left: 20px;
+}
+
+.bottom{
+    max-width: 80%;
+    min-width: 80%;
+}
+
+.tiktak{
+    position: absolute;
+    right: 100px;
+}
+
+.video{
+    transition: 0.5s ease-in-out;
+}
+
+.video:hover{
+    text-decoration: underline;
+}
+
 
 @media (max-width: 1350px) {
     .description{
