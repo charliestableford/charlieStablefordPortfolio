@@ -20,7 +20,7 @@ $varela: 'Varela Round', sans-serif;
 
 body{
     background: white;
-    border-left: $darkBlue 50px solid;
+    border-left: $darkBlue 20px solid;
     border-right: $darkBlue 20px solid;
     border-top: $darkBlue 20px solid;
     border-bottom: $darkBlue 20px solid;
@@ -113,8 +113,8 @@ nav{
     font-family:  'Open Sans', sans-serif;
     transform: rotate(-90deg);
     position: fixed;
-    top: 40%;
-    left:-240px;
+    top: 55%;
+    left:-375px;
     // background: white;
     // border-radius: 20px 20px 0px 0px;
 }
@@ -124,26 +124,23 @@ nav>ul{
     float: right;
 }
 
-nav>ul>li{
+nav>ul>li>a{
    list-style: none;
    float: left;
-   padding-right: 10px;
+//    padding-right: 10px;
    transition: 0.5s;
-//    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-//    width: 0;
+   z-index: 1;
+
 }
 
 .tab{
-    background: white;
+    // background: white;
     border-radius: 20px 20px 0px 0px;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 40px 10px 40px;
+    z-index: -1;
 }
 
-nav>ul>li:hover{
-    text-decoration: underline;
-    // width: 100%; 
-    // left: 0; 
-}
+
 
 a{
     text-decoration: none;
@@ -285,6 +282,14 @@ span.highlight{
     // z-index: 1; 
 }
 
+.tools{
+    margin-bottom: 150px;
+}
+
+.toolkit{
+    margin-top: 50px;
+}
+
 li{
     list-style: none;
     float: left;
@@ -349,6 +354,10 @@ a.video{
     right: 40px;
     bottom: 20px;
     font-size: 60px;
+}
+
+.fa-umbrella-beach{
+    color: $black;
 }
 
 @media(max-width: 1850px) {

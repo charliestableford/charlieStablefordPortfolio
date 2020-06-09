@@ -7,7 +7,7 @@
 
 body {
   background: white;
-  border-left: #4a56bb 50px solid;
+  border-left: #4a56bb 20px solid;
   border-right: #4a56bb 20px solid;
   border-top: #4a56bb 20px solid;
   border-bottom: #4a56bb 20px solid;
@@ -136,29 +136,25 @@ nav {
   font-family: 'Open Sans', sans-serif;
   transform: rotate(-90deg);
   position: fixed;
-  top: 40%;
-  left: -240px;
+  top: 55%;
+  left: -375px;
 }
 
 nav > ul {
   float: right;
 }
 
-nav > ul > li {
+nav > ul > li > a {
   list-style: none;
   float: left;
-  padding-right: 10px;
   transition: 0.5s;
+  z-index: 1;
 }
 
 .tab {
-  background: white;
   border-radius: 20px 20px 0px 0px;
-  padding: 10px 20px 10px 20px;
-}
-
-nav > ul > li:hover {
-  text-decoration: underline;
+  padding: 10px 40px 10px 40px;
+  z-index: -1;
 }
 
 a {
@@ -293,6 +289,14 @@ span.highlight {
   float: left;
 }
 
+.tools {
+  margin-bottom: 150px;
+}
+
+.toolkit {
+  margin-top: 50px;
+}
+
 li {
   list-style: none;
   float: left;
@@ -357,6 +361,10 @@ a.video {
   right: 40px;
   bottom: 20px;
   font-size: 60px;
+}
+
+.fa-umbrella-beach {
+  color: #2a2a2a;
 }
 
 @media (max-width: 1850px) {
