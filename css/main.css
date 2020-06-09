@@ -6,10 +6,19 @@
 }
 
 body {
-  background: #4a56bb;
+  background: white;
+  border-left: #4a56bb 50px solid;
+  border-right: #4a56bb 20px solid;
+  border-top: #4a56bb 20px solid;
+  border-bottom: #4a56bb 20px solid;
   font-family: "Playfair Display", serif;
   color: #2a2a2a;
   font-size: 1.25em;
+  margin: 0;
+}
+
+.confine {
+  margin: 10%;
 }
 
 [class*="col-"] {
@@ -103,6 +112,7 @@ body {
   background: white;
   margin: 15px;
   padding: 10px 90px 10px 90px;
+  position: relative;
 }
 
 .email {
@@ -124,6 +134,10 @@ body {
 
 nav {
   font-family: 'Open Sans', sans-serif;
+  transform: rotate(-90deg);
+  position: fixed;
+  top: 40%;
+  left: -240px;
 }
 
 nav > ul {
@@ -133,12 +147,38 @@ nav > ul {
 nav > ul > li {
   list-style: none;
   float: left;
-  padding: 20px;
+  padding-right: 10px;
+  transition: 0.5s;
+}
+
+.tab {
+  background: white;
+  border-radius: 20px 20px 0px 0px;
+  padding: 10px 20px 10px 20px;
+}
+
+nav > ul > li:hover {
+  text-decoration: underline;
 }
 
 a {
   text-decoration: none;
   color: #2a2a2a;
+  z-index: 1;
+}
+
+span.highlight {
+  transition: all 1s;
+  border-radius: 50px;
+  position: absolute;
+  opacity: .75;
+  top: 0;
+  background: #f13b39;
+  left: 0;
+  z-index: -1;
+  display: block;
+  padding-left: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .selfie {
@@ -152,7 +192,9 @@ a {
 
 .name {
   margin: 10px;
+  padding-left: 50px;
   font-family: 'Open Sans', sans-serif;
+  float: left;
 }
 
 .description {
@@ -169,10 +211,7 @@ a {
 .live {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-}
-
-.hidden-col {
-  visibility: hidden;
+  margin-top: -50px;
 }
 
 .text-left {
@@ -207,7 +246,7 @@ a {
 }
 
 .progress progress::-moz-progress-bar {
-  background-color: #bacae6;
+  background-color: rgba(186, 202, 230, 0.5);
 }
 
 .progress progress::-webkit-progress-bar {
@@ -215,7 +254,7 @@ a {
 }
 
 .progress progress::-webkit-progress-value {
-  background-color: #bacae6;
+  background-color: rgba(186, 202, 230, 0.5);
 }
 
 .CTA {
@@ -229,6 +268,7 @@ a {
   float: left;
   z-index: 2;
   position: relative;
+  border-radius: 100px;
 }
 
 .CTA > p {
@@ -270,9 +310,14 @@ h3 {
   color: #4a56bb;
 }
 
-.view {
-  padding-top: 30px;
+a > p > .view {
+  z-index: 2;
+}
+
+a > .view {
+  margin-top: 30px;
   color: #2a2a2a;
+  z-index: 1;
 }
 
 .fa-arrow-right {
@@ -284,17 +329,46 @@ h3 {
   min-width: 80%;
 }
 
-.tiktak {
+.abstractOne {
   position: absolute;
-  right: 100px;
+  top: 50px;
+  right: 50%;
+  z-index: -1;
 }
 
-.video {
+.abstractSix {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  z-index: -1;
+  opacity: .75;
+}
+
+a.video {
   transition: 0.5s ease-in-out;
 }
 
 .video:hover {
   text-decoration: underline;
+}
+
+.up {
+  position: fixed;
+  right: 40px;
+  bottom: 20px;
+  font-size: 60px;
+}
+
+@media (max-width: 1850px) {
+  .name {
+    padding-left: 150px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .name {
+    display: none;
+  }
 }
 
 @media (max-width: 1350px) {
@@ -303,9 +377,58 @@ h3 {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1003px) {
   .social {
     max-width: 44px;
     max-height: 44px;
+  }
+  .description {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 550px) {
+  .imgGrid {
+    max-width: 300px;
+    min-width: 300px;
+  }
+  .bottom {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .email {
+    display: none;
+  }
+  .CTA {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: -50px;
+  }
+  .CTA > p {
+    padding-top: 10px;
+  }
+  .confine {
+    margin: 5px;
+  }
+  .description {
+    font-size: 20px;
+  }
+  .live {
+    font-size: 15px;
+    margin-top: -50px;
+  }
+  .container {
+    margin-left: 20px;
+  }
+  .abstractSix {
+    opacity: .25;
+  }
+  .selfie {
+    max-height: 55px;
+    max-width: 55px;
+  }
+  .copyright {
+    font-size: 15px;
   }
 }

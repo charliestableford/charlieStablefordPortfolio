@@ -9,6 +9,7 @@ $red: #f13b39;
 $peach: #f47154;
 $playfair: 'Playfair Display', serif;
 $open:  'Open Sans', sans-serif;
+$varela: 'Varela Round', sans-serif;
 
 *{
     box-sizing: border-box;
@@ -18,10 +19,19 @@ $open:  'Open Sans', sans-serif;
 }
 
 body{
-    background: $darkBlue;
+    background: white;
+    border-left: $darkBlue 50px solid;
+    border-right: $darkBlue 20px solid;
+    border-top: $darkBlue 20px solid;
+    border-bottom: $darkBlue 20px solid;
     font-family: $playfair;
     color: $black;
     font-size: 1.25em;
+    margin:0;
+}
+
+.confine{
+    margin: 10%;
 }
 
 [class*="col-"] {
@@ -78,6 +88,8 @@ body{
     background: white;
     margin: 15px;
     padding: 10px 90px 10px 90px;
+    // z-index: -4;
+    position: relative;
 }
 
 .email{
@@ -99,7 +111,14 @@ body{
 
 nav{
     font-family:  'Open Sans', sans-serif;
+    transform: rotate(-90deg);
+    position: fixed;
+    top: 40%;
+    left:-240px;
+    // background: white;
+    // border-radius: 20px 20px 0px 0px;
 }
+
 
 nav>ul{
     float: right;
@@ -108,12 +127,45 @@ nav>ul{
 nav>ul>li{
    list-style: none;
    float: left;
-   padding: 20px;
+   padding-right: 10px;
+   transition: 0.5s;
+//    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+//    width: 0;
+}
+
+.tab{
+    background: white;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px 20px 10px 20px;
+}
+
+nav>ul>li:hover{
+    text-decoration: underline;
+    // width: 100%; 
+    // left: 0; 
 }
 
 a{
     text-decoration: none;
     color: $black;
+    // background: rgba(0,0,0,0.05);
+    z-index: 1; 
+}
+
+
+span.highlight{
+    transition: all 1s;
+    // border-bottom: 2px solid white;
+    border-radius: 50px;
+    position: absolute;
+    opacity: .75;
+    top:0;
+    background: $red;
+    left:0;
+    z-index: -1;
+    display: block;
+    padding-left:10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .selfie{
@@ -127,7 +179,9 @@ a{
 
 .name{
     margin: 10px;
+    padding-left: 50px;
     font-family:  'Open Sans', sans-serif;
+    float: left;
 }
 
 .description{
@@ -144,12 +198,16 @@ a{
 .live{
     font-family: $open;
     font-size: 20px;
+    margin-top: -50px;
 }
-
-  .hidden-col {visibility: hidden;}
   
-  .text-left {text-align: left;}
-  .text-right {text-align: right;}
+  .text-left {
+      text-align: left;
+    }
+    
+  .text-right {
+      text-align: right;
+    }
 
   .progress {
     // transform: rotate(90deg);
@@ -180,13 +238,13 @@ a{
 
 	progress::-moz-progress-bar { 
         background-color: rgba(
-            $pastelBlue, 1); 
+            $pastelBlue, .5); 
         }
 	progress::-webkit-progress-bar { 
         background-color: transparent; 
     }
 	progress::-webkit-progress-value { 
-        background-color: rgba($pastelBlue, 1); 
+        background-color: rgba($pastelBlue, .5); 
     }
 
 }
@@ -202,6 +260,7 @@ a{
     float: left;
     z-index: 2;
     position: relative;
+    border-radius: 100px;
 }
 
 .CTA>p{
@@ -222,8 +281,8 @@ a{
   }
 
 .socials{
-    float: left;    
-   
+    float: left;   
+    // z-index: 1; 
 }
 
 li{
@@ -243,9 +302,14 @@ h3{
     color: $darkBlue;
 }
 
-.view{
-    padding-top: 30px;
+a>p>.view{
+    z-index: 2;
+}
+
+a>.view{
+    margin-top: 30px;
     color: $black;
+    z-index: 1;
 }
 
 .fa-arrow-right{
@@ -255,21 +319,49 @@ h3{
 .bottom{
     max-width: 80%;
     min-width: 80%;
-}
 
-.tiktak{
+}
+.abstractOne{
     position: absolute;
-    right: 100px;
+    top: 50px;
+    right: 50%;
+    z-index: -1;
+}
+.abstractSix{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    z-index: -1;
+    opacity: .75;
 }
 
-.video{
+a.video{
     transition: 0.5s ease-in-out;
+    // z-index: 1;
 }
 
 .video:hover{
     text-decoration: underline;
 }
 
+.up{
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    font-size: 60px;
+}
+
+@media(max-width: 1850px) {
+    .name{
+        padding-left: 150px;
+    }
+}
+
+@media(max-width: 1550px) {
+    .name{
+        display: none;
+    }
+}
 
 @media (max-width: 1350px) {
     .description{
@@ -278,10 +370,74 @@ h3{
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1003px) {
     .social{
         max-width:44px;
         max-height: 44px;
     }
+    .description{
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width: 550px) {
+    .imgGrid{
+        max-width: 300px;
+        min-width: 300px;
+    }
+
+
+.bottom{
+    max-width: 100%;
+    min-width: 100%;
+
+}
+
+    .email{
+        display: none;
+    }
+
+    .CTA{
+        width: 250px;
+        height: 50px;
+        font-size: 20px;
+        margin-top: -50px;
+    }
+
+    .CTA>p{
+        padding-top: 10px;
+    }
+
+
+.confine{
+    margin:5px;
+}
+
+.description{
+    font-size: 20px;
+}
+
+.live{
+    font-size: 15px;
+    margin-top: -50px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.abstractSix{
+    opacity: .25;
+}
+
+.selfie{
+    max-height: 55px;
+    max-width: 55px;
+}
+
+.copyright{
+    font-size: 15px;
+}
+
 }
 
