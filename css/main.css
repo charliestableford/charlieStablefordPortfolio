@@ -134,10 +134,9 @@ body {
 
 nav {
   font-family: 'Open Sans', sans-serif;
-  transform: rotate(-90deg);
   position: fixed;
-  top: 55%;
-  left: -375px;
+  right: 5%;
+  top: 3%;
 }
 
 nav > ul {
@@ -167,6 +166,7 @@ span.highlight {
   transition: all 1s;
   border-radius: 50px;
   position: absolute;
+  color: white;
   opacity: .75;
   top: 0;
   background: #f13b39;

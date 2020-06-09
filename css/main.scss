@@ -111,10 +111,12 @@ body{
 
 nav{
     font-family:  'Open Sans', sans-serif;
-    transform: rotate(-90deg);
+    // transform: rotate(-90deg);
     position: fixed;
-    top: 55%;
-    left:-375px;
+    right: 5%;
+    top: 3%;
+    // top: 55%;
+    // left:-175px;
     // background: white;
     // border-radius: 20px 20px 0px 0px;
 }
@@ -155,6 +157,7 @@ span.highlight{
     // border-bottom: 2px solid white;
     border-radius: 50px;
     position: absolute;
+    color: white;
     opacity: .75;
     top:0;
     background: $red;

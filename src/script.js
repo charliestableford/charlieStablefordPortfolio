@@ -29,7 +29,7 @@ function shadow(e){
     const yMove = Math.round((y / height * movement) - (movement /2));
 
     // sub in the above coordinates
-    text.style.textShadow = `${xMove}px ${yMove}px 0 rgba(241, 59, 57, 0.75) `;
+    text.style.textShadow = `${xMove}px ${yMove}px 0 rgba(241, 59, 57,.75) `;
 
     // console.log(xMove, yMove);
     // console.log(x,y);
