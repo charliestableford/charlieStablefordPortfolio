@@ -337,6 +337,16 @@ a > .view {
   margin-top: 100px;
 }
 
+.linked {
+  max-width: 50px;
+  min-width: 50px;
+}
+
+.workTitle {
+  color: #4a56bb;
+  font-size: 1.25em;
+}
+
 .abstractOne {
   position: absolute;
   top: 50px;
