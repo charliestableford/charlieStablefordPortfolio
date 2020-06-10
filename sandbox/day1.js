@@ -1,16 +1,21 @@
 console.log('day one');
 
 const text = document.querySelector("#text");
-let firstWord = text.value;
+// let firstWord = text.value;
 // find the input value
-window.onload = function() {
-  text.addEventListener("input", function() {
-    firstWord = text.value;
-    console.log(firstWord);
-  });
- return firstWord;
-}
-    //split input value into a string
-    let split = firstWord.split(',');
+ function palindrome() {
+  let firstWord = text.value;
+  console.log(firstWord);
+     //split input value into a string, reverse and then join back
+    let split = firstWord.split('').reverse().join('');
     console.log(split);
 
+    if(firstWord===split){
+        console.log('palindrome');
+    } else {
+        console.log('not a palindrome');
+    }
+
+} 
+
+    text.addEventListener("input", palindrome);
