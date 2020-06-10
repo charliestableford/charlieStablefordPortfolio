@@ -333,6 +333,10 @@ a > .view {
   min-width: 80%;
 }
 
+.viewDrib {
+  margin-top: 100px;
+}
+
 .abstractOne {
   position: absolute;
   top: 50px;
@@ -367,6 +371,20 @@ a.video {
   color: #2a2a2a;
 }
 
+.everyday {
+  margin-top: 50px;
+}
+
+.imgGrid {
+  max-width: 400px;
+  min-width: 400px;
+}
+
+.imgGridWide {
+  max-width: 800px;
+  min-width: 800px;
+}
+
 @media (max-width: 1850px) {
   .name {
     padding-left: 150px;
@@ -376,6 +394,10 @@ a.video {
 @media (max-width: 1550px) {
   .name {
     display: none;
+  }
+  .imgGrid {
+    max-width: 300px;
+    min-width: 300px;
   }
 }
 
