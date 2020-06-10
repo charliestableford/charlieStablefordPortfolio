@@ -1,6 +1,7 @@
 console.log('day one');
 
-const text = document.querySelector("#text");
+const text = document.querySelector("#searchInput");
+const answer = document.querySelector(".answer");
 // let firstWord = text.value;
 // find the input value
  function palindrome() {
@@ -15,7 +16,9 @@ const text = document.querySelector("#text");
     } else {
         console.log('not a palindrome');
     }
+    // set innerHTML to p.
+    html = answer.innerHTML;
 
 } 
-
-    text.addEventListener("input", palindrome);
+searchInput.addEventListener("change", palindrome);
+text.addEventListener("input", palindrome);
