@@ -12,13 +12,13 @@ const answer = document.querySelector(".answer");
     console.log(split);
 
     if(firstWord===split){
+        // set innerHTML to p.
+        answer.innerHTML = "palindrome";
         console.log('palindrome');
     } else {
+        answer.innerHTML = "not a palindrome";
         console.log('not a palindrome');
     }
-    // set innerHTML to p.
-    html = answer.innerHTML;
-
 } 
-searchInput.addEventListener("change", palindrome);
+text.addEventListener("change", palindrome);
 text.addEventListener("input", palindrome);
