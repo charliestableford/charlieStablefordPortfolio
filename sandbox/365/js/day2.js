@@ -18,7 +18,9 @@ function timing(){
     const current = new Date();
       // define hours
       let hour = current.getHours();
+      // if current hour is greater than 12 pm if less am.
       let AmPm = hour >= 12 ? 'pm' : 'am';
+      // take the time and divide it by 12. If time = 0 then let equal 12.
       hour = (hour % 12) || 12;
       digitalHour.innerHTML = ` ${hour} &#58;`;
       // console.log(hour);    
