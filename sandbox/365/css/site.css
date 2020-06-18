@@ -1,5 +1,18 @@
+body{
+    background: black;
+    color: #39ff14;
+}
+
 .time{
     display: block;
     float: left;
     margin-right: 10px;
+    /* font-family: 'Bungee', cursive; */
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3em;
+    padding: 2%;
 }
+/* 
+.timer{
+    border: 2px solid #39ff14;
+} */

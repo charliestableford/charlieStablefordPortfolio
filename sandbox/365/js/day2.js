@@ -3,6 +3,11 @@ console.log('timer');
 const digitalHour = document.querySelector('.hours');
 const digitalMin = document.querySelector('.minutes');
 const digitalSecond = document.querySelector('.seconds');
+const submit = document.querySelector('.submit');
+const alarmSound = document.querySelector('#alarmSound');
+const inputHour = document.querySelector('.inputHour');
+const inputMinute = document.querySelector('.inputMinute');
+const inputTwo= document.querySelector('.inputTwo');
 // console.log(digitalHour, digitalMin, digitalSecond);
 
 //get the value of the input field
@@ -12,7 +17,9 @@ const digitalSecond = document.querySelector('.seconds');
 function timing(){
     const current = new Date();
       // define hours
-      const hour = current.getHours();
+      let hour = current.getHours();
+      let AmPm = hour >= 12 ? 'pm' : 'am';
+      hour = (hour % 12) || 12;
       digitalHour.innerHTML = ` ${hour} &#58;`;
       // console.log(hour);    
       
@@ -24,15 +31,12 @@ function timing(){
     // define seconds
     let seconds = current.getSeconds();
     // digitalSecond.innerHTML = seconds;
-    digitalSecond.innerHTML = ` ${seconds}`;
+    digitalSecond.innerHTML = ` ${seconds}` + AmPm;
     // console.log(seconds);
+
+
+
 }
 //update page every second
 setInterval(timing, 1000);
 
-
-timing();
-  
-
-// define timer
-// enter in time you want alarm to go off 
