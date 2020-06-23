@@ -427,6 +427,9 @@ a.video{
     // min-width: 35px;
 }
 
+.inProg{
+    opacity: .5;
+}
 @media(max-width: 1850px) {
     .name{
         padding-left: 150px;
