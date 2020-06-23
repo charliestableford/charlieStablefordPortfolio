@@ -17,6 +17,10 @@ body {
   margin: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 .confine {
   margin: 10%;
 }
@@ -113,6 +117,10 @@ body {
   margin: 15px;
   padding: 10px 90px 10px 90px;
   position: relative;
+}
+
+.toHighLight {
+  cursor: pointer;
 }
 
 .email {
@@ -292,12 +300,7 @@ span.highlight {
 }
 
 .tools {
-  margin-bottom: 150px;
-}
-
-.toolkit {
-  margin-top: 50px;
-  height: 22vh;
+  justify-content: space-between;
 }
 
 li {
@@ -433,6 +436,11 @@ a.video {
   opacity: .5;
 }
 
+.toolPart {
+  max-width: 44px;
+  min-width: 44px;
+}
+
 @media (max-width: 1850px) {
   .name {
     padding-left: 150px;
@@ -494,15 +502,21 @@ a.video {
 @media (max-width: 768px) {
   .social {
     max-width: 46px;
-    max-height: 46px;
+    min-width: 46px;
   }
   .toolPart {
     max-width: 44px;
     min-width: 44px;
   }
   .imgGridWide {
-    max-width: 500px;
-    min-width: 500px;
+    max-width: 450px;
+    min-width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
   }
 }
 
@@ -512,8 +526,8 @@ a.video {
     min-width: 300px;
   }
   .imgGridWide {
-    max-width: 300px;
-    min-width: 300px;
+    max-width: 350px;
+    min-width: 350px;
   }
   .bottom {
     max-width: 100%;
@@ -564,9 +578,13 @@ a.video {
     max-height: 50px;
     max-width: 50px;
   }
+  .toolPart {
+    max-width: 35px;
+    min-width: 35px;
+  }
   .imgGridWide {
-    max-width: 360px;
-    min-width: 360px;
+    max-width: 320px;
+    min-width: 320px;
   }
   .confine {
     margin: 10px;
