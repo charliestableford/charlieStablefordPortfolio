@@ -223,13 +223,43 @@ a {
   right: 40px;
 }
 
+.fa-arrow-left {
+  color: black;
+}
+
 .heroImage {
-  background-image: url("../../imgs/duck/RubberDuckMock.png");
+  background-image: url("../../imgs/casestudies/duck/RubberDuckMock.png");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.fa-arrow-right, .fa-arrow-left {
+  font-size: 30px;
+  color: #00315C;
+}
+
+.CTA {
+  background: #00315C;
+  color: white;
+  font-size: 1.25em;
+  align-items: center;
+  width: 350px;
+  height: 70px;
+  float: left;
+  z-index: 2;
+  position: relative;
+  border-radius: 100px;
+}
+
+.CTA > p {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .headerIntro {
@@ -256,6 +286,7 @@ a {
 
 .headerFull {
   color: #00315C;
+  padding-top: 20px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -271,14 +302,9 @@ a {
   position: absolute;
   top: 50px;
   left: 50px;
+  font-size: 30px;
   color: #00315C;
   font-family: "Baloo Bhai", cursive;
-  border: 1px solid #00315C;
-  border-radius: 100px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   transition: ease-in-out 1s;
 }
 
@@ -775,6 +801,14 @@ a {
 @media (max-width: 1000px) {
   .density {
     width: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .duckLogo {
+    width: 80px;
+    top: 700px;
+    right: 15px;
   }
 }
 
