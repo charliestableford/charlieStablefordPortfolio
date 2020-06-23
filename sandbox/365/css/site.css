@@ -1,18 +1,113 @@
-body{
-    background: black;
-    color: #39ff14;
+/*common code*/
+.back {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
 }
 
-.time{
-    display: block;
-    float: left;
-    margin-right: 2%;
-    /* font-family: 'Bungee', cursive; */
-    font-family: 'Press Start 2P', cursive;
-    font-size: 3em;
-    padding: 2%;
+.medium {
+  min-height: 40px;
+  max-height: 40px;
 }
-/* 
-.timer{
-    border: 2px solid #39ff14;
-} */
+
+h2 {
+  font-size: 3.2em;
+}
+
+.body {
+  font-size: 3em;
+}
+
+span.highlight {
+  transition: all 1s;
+  border-radius: 50px;
+  position: absolute;
+  color: white;
+  opacity: .75;
+  top: 0;
+  background: #f13b39;
+  left: 0;
+  z-index: -1;
+  display: block;
+  padding-left: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+span {
+  color: #f13b39;
+}
+
+/*Day One*/
+#dayOne {
+  font-family: 'Playfair Display', serif;
+  margin: 10%;
+}
+
+#dayOne #searchInput {
+  height: 30px;
+  font-size: 20px;
+}
+
+#dayOne .fa-keyboard {
+  font-size: 20px;
+}
+
+#dayOne .fa-arrow-right {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#dayOne .fa-arrow-left {
+  margin-right: 10px;
+}
+
+#dayOne .answer {
+  font-size: 20px;
+}
+
+#dayTwo .wrapper {
+  margin: 5%;
+}
+
+#dayTwo .explaination {
+  font-family: 'Playfair Display', serif;
+  display: block;
+}
+
+#dayTwo .timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  /* font-family: 'Bungee', cursive; */
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.5em;
+  justify-content: center;
+}
+
+#DayFour .wrapper {
+  margin: 5%;
+  height: 200vh;
+}
+
+#DayFour nav {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  border-radius: 50px;
+}
+
+#DayFour li {
+  list-style: none;
+  padding: 10px 40px 10px 10px;
+  /* text-align: center;  */
+  font-size: 1.5em;
+  /* background: #b5c7d3; */
+  transition: 0.5s;
+  text-align: center;
+  float: left;
+}
+
+#DayFour .btm {
+  font-size: 1.5em;
+}

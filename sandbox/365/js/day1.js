@@ -13,10 +13,10 @@ const answer = document.querySelector(".answer");
 
     if(firstWord===split){
         // set innerHTML to p.
-        answer.innerHTML = "palindrome";
+        answer.innerHTML = "palindrome 🤓🔓";
         console.log('palindrome');
     } else {
-        answer.innerHTML = "not a palindrome";
+        answer.innerHTML = "not a palindrome 🔒";
         console.log('not a palindrome');
     }
 } 

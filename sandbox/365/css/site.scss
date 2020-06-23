@@ -1,0 +1,126 @@
+/*common code*/
+.back{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.medium{
+    min-height: 40px;
+    max-height: 40px; 
+}
+
+h2{
+    font-size: 3.2em;
+}
+
+.body{
+    font-size: 3em;
+}
+span.highlight{
+    transition: all 1s;
+    // border-bottom: 2px solid white;
+    border-radius: 50px;
+    position: absolute;
+    color: white;
+    opacity: .75;
+    top:0;
+    background: #f13b39;
+    left:0;
+    z-index: -1;
+    display: block;
+    padding-left:10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+span{
+    color: #f13b39;
+}
+
+/*Day One*/
+#dayOne{
+    font-family:'Playfair Display', serif;
+    margin: 10%;
+
+
+    #searchInput{
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .fa-keyboard{
+        font-size: 20px;
+    }
+
+    .fa-arrow-right{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .fa-arrow-left{
+        margin-right: 10px;
+    }
+
+
+    .answer{
+        font-size: 20px;
+    }
+
+}
+
+#dayTwo{
+
+    .wrapper{
+        margin: 5%;
+    }
+
+    .explaination{
+        font-family: 'Playfair Display', serif;
+        display: block;
+    }
+
+    .timer{
+        // flex: 4;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-around;
+            text-align: center; 
+            // float: left;
+    /* font-family: 'Bungee', cursive; */
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5em;
+    justify-content: center;
+}
+}
+
+#DayFour{
+    .wrapper{
+        margin: 5%;
+        height: 200vh;
+    }
+
+    nav{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        border-radius: 50px;
+    }
+
+li {
+list-style: none;
+ padding: 10px 40px 10px 10px; 
+/* text-align: center;  */
+font-size: 1.5em; 
+/* background: #b5c7d3; */
+transition: 0.5s; 
+text-align: center;
+float: left;
+// margin-right: 10px;
+
+}
+
+.btm{
+    font-size: 1.5em; 
+}
+}
+
