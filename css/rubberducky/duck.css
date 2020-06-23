@@ -308,12 +308,6 @@ a {
   transition: ease-in-out 1s;
 }
 
-.return:hover {
-  color: #eef2f5;
-  background-color: #00315C;
-  transition: ease-in-out 1s;
-}
-
 .backRubber {
   display: none;
 }
@@ -529,6 +523,7 @@ a {
   margin-top: 100px;
   color: #00315C;
   font-family: "Open Sans", sans-serif;
+  width: 60%;
 }
 
 .testLeft {

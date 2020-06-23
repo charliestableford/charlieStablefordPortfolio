@@ -10,7 +10,7 @@
   grid-template-columns: 200px 1fr 1fr;
   grid-template-rows: 80px 1fr 1fr 100px;
   grid-gap: 1rem;
-  grid-template-areas: "header header sidebar" "content-1 content-1 sidebar" "redactCIA redactCIA redactCIA" "content-2 content-2 sidebar" "content-3 content-3 sidebar" "summary summary summary" "content-4 content-4 sidebar" "content-5 content-5 sidebar" "gallery gallery gallery" "middleBar middleBar middleBar" "middleBarTwo middleBarTwo middleBarTwo" "palette palette palette" "content-6 content-6 content-6" "content-7 content-7 content-7" "content-8 content-8 content-8" "content-9 content-9 content-9" "content-10 content-10 content-10" "content-11 content-11 content-11" "content-12 content-12 content-12" "content-13 content-13 sideQuestion" "content-14 content-14 sideQuestion" "content-15 content-15 sideQuestion" "content-16 content-16 sideQuestion" "content-17 content-17 sideQuestion" "content-18 content-18 sideQuestion" "content-19 content-19 content-19" "content-20 content-20 content-20" "content-21 content-21 content-21" "content-22 content-22 content-22" "content-23 content-23 content-23" "content-24 content-24 content-24" "content-25 content-25 content-25" "content-26 content-26 content-26" "content-27 content-27 content-27" "content-28 content-28 content-28" "content-29 content-29 content-29" "content-30 content-30 content-30" "content-31 content-31 content-31" "content-32 content-32 content-32" "content-33 content-33 content-33" "content-34 content-34 content-34" "content-35 content-35 content-35" "content-36 content-36 content-36" "footer footer footer";
+  grid-template-areas: "header header sidebar" "content-1 content-1 sidebar" "redactCIA redactCIA redactCIA" "content-2 content-2 sidebar" "content-3 content-3 sidebar" "summary summary summary" "smallSum smallSum smallSum" "content-4 content-4 sidebar" "content-5 content-5 sidebar" "gallery gallery gallery" "middleBar middleBar middleBar" "middleBarTwo middleBarTwo middleBarTwo" "palette palette palette" "content-6 content-6 content-6" "content-7 content-7 content-7" "content-8 content-8 content-8" "content-9 content-9 content-9" "content-10 content-10 content-10" "content-11 content-11 content-11" "content-12 content-12 content-12" "content-13 content-13 sideQuestion" "content-14 content-14 sideQuestion" "content-15 content-15 sideQuestion" "content-16 content-16 sideQuestion" "content-17 content-17 sideQuestion" "content-18 content-18 sideQuestion" "content-19 content-19 content-19" "content-20 content-20 content-20" "content-21 content-21 content-21" "content-22 content-22 content-22" "content-23 content-23 content-23" "content-24 content-24 content-24" "content-25 content-25 content-25" "content-26 content-26 content-26" "content-27 content-27 content-27" "content-28 content-28 content-28" "content-29 content-29 content-29" "content-30 content-30 content-30" "content-31 content-31 content-31" "content-32 content-32 content-32" "content-33 content-33 content-33" "content-34 content-34 content-34" "content-35 content-35 content-35" "content-36 content-36 content-36" "footer footer footer";
 }
 
 .header {
@@ -206,6 +206,11 @@ body {
   align-items: center;
 }
 
+.hero {
+  max-width: 100%;
+  min-width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -233,9 +238,37 @@ a {
   padding-top: 10px;
   padding-bottom: 10px;
   color: #0F0E0E;
-  margin-top: 50px;
-  margin-left: 50px;
-  border: 1px solid #0F0E0E;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  font-size: 30px;
+}
+
+.fa-arrow-right, .fa-arrow-left {
+  font-size: 30px;
+  color: #0F0E0E;
+}
+
+.CTA {
+  background: #0F0E0E;
+  color: white;
+  font-size: 1.25em;
+  align-items: center;
+  width: 350px;
+  height: 70px;
+  float: left;
+  z-index: 2;
+  position: relative;
+  border-radius: 100px;
+}
+
+.CTA > p {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  text-align: center;
 }
 
 .bodyTitle {
@@ -251,6 +284,7 @@ a {
   text-align: left;
   width: 70%;
   margin-left: 50px;
+  margin-top: 5%;
 }
 
 .whole {

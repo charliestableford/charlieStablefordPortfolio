@@ -359,11 +359,11 @@ main{
     transition: ease-in-out 1s;
 }
 
-.return:hover{
-    color: $grey;
-    background-color: $fontColour;
-    transition: ease-in-out 1s;
-}
+// .return:hover{
+//     color: $grey;
+//     background-color: $fontColour;
+//     transition: ease-in-out 1s;
+// }
 
 .backRubber{
   display: none;
@@ -577,6 +577,7 @@ cursor: pointer;
   margin-top: 100px;
     color: $fontColour;
     font-family: $fontBody;
+    width: 60%;
 
 }
 
