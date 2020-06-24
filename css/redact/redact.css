@@ -407,6 +407,7 @@ a {
   font-size: 30px;
   font-family: "Playfair Display";
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .baseSm {
@@ -673,6 +674,10 @@ div.temp-wrapper {
   border-radius: inherit;
   background-size: cover;
   background-position: center center;
+}
+
+.margBtm {
+  margin-bottom: 50px;
 }
 
 .backing {
