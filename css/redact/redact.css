@@ -306,6 +306,7 @@ a {
 
 .vidSeries {
   margin-bottom: 200px;
+  margin-top: 100px;
   -webkit-box-shadow: 2px 11px 15px 4px rgba(0, 0, 0, 0.29);
   box-shadow: 2px 11px 15px 4px rgba(0, 0, 0, 0.29);
 }
@@ -686,7 +687,7 @@ div.temp-wrapper {
 }
 
 .iconSmL {
-  display: none;
+  margin: 5%;
 }
 
 .iconUp {
