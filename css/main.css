@@ -578,6 +578,11 @@ a.video {
     max-height: 50px;
     max-width: 50px;
   }
+  .social {
+    max-width: 35px;
+    min-width: 35px;
+    padding-left: 0;
+  }
   .toolPart {
     max-width: 35px;
     min-width: 35px;
@@ -606,5 +611,38 @@ a.video {
   }
   .socials {
     margin-top: -30px;
+  }
+}
+
+@media (max-width: 375px) {
+  li {
+    padding-left: 10px;
+  }
+  .CTA {
+    background: #f13b39;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-size: 1em;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    float: left;
+    z-index: 2;
+    position: relative;
+    border-radius: 100px;
+    margin-left: -20px;
+  }
+  .col-1, .col-2 {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  .bodyText {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
   }
 }

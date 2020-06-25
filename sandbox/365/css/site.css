@@ -111,3 +111,97 @@ span {
 #DayFour .btm {
   font-size: 1.5em;
 }
+
+#dayFive .toHighLight {
+  cursor: pointer;
+}
+
+#dayFive li {
+  list-style: none;
+}
+
+#dayFive .wrapper {
+  margin: 5%;
+}
+
+#dayFive .shopping {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+#dayFive .fa-plus-square, #dayFive .fa-check-square {
+  font-size: 30px;
+  color: #f13b39;
+}
+
+#dayFive .itemName {
+  font-size: 20px;
+  color: black;
+}
+
+#dayFive button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+#dayFive .shoppingList {
+  background: white;
+  padding: 3rem;
+  border-radius: 1rem;
+  width: 500px;
+  margin: 2rem 0;
+}
+
+#dayFive .shopping-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#dayFive .shopping-item {
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+#dayFive .shopping-item input[type="checkbox"]:checked + .itemName {
+  opacity: 0.5;
+}
+
+#dayFive .shopping-item button {
+  padding: 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#dayFive .shopping-item button:hover {
+  transform: scale(1.4);
+}
+
+#daySix .wrapper {
+  margin: 5%;
+}
+
+#daySix .grid {
+  max-width: 30%;
+  min-width: 30%;
+  float: left;
+  margin: 5px;
+}
+
+#daySix .bigPic {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
