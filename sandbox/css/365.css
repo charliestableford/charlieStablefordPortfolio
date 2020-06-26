@@ -80,6 +80,10 @@ img:hover {
   margin-left: 10px;
 }
 
+.opacity {
+  opacity: .5;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
