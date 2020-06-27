@@ -209,19 +209,31 @@ float: left;
     .grid{
         max-width: 30%;
         min-width: 30%;
-        float: left;
+        // float: left;
         margin:5px;
+        padding-bottom: 5%;
     }
 
     .bigPic{
         display: none;
         position: fixed;
         z-index: 1;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        overflow: auto;
+        justify-content: center;
+        // left: 0;
+        top:100px;
+        max-width: 50%;
+        min-width: 50%;
+        cursor: pointer;
+        // overflow: auto;
         background-color: rgba(0,0,0,0.5);
+    }
+
+    .fa-times{
+        display: none;
+        position: fixed;
+        right: 40%;
+        top: 100px;
+        font-size: 30px;
+        color: black;
     }
 }
