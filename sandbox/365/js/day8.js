@@ -2,8 +2,7 @@ console.log('day eight');
 
 const before = document.querySelector('.before');
 const after = document.querySelector('.after');
-const add = document.querySelector('.add');
-const subtract = document.querySelector('.subtract');
+const refresh = document.querySelector('.refresh');
 
 const arr = ['🍏', '🍇', '🍅', '🍑', '🍌', '🍉', '🍊', '🥭'];
 const copy = [];
@@ -37,7 +36,7 @@ function adding(e){
     console.log(clicking);
     // take that value and put it into the new array.
 
-    console.log('added');
+    // console.log('added');
     
     let ul = document.createElement('ul');
     after.appendChild(ul);
@@ -45,15 +44,12 @@ function adding(e){
     let li = document.createElement('li');
     let button = document.createElement('button');
     ul.appendChild(li);
-    li.appendChild(button);
+    li.appendChild(clicking);
+    // button.appendChild(clicking);
 
     button.innerHTML += copy; 
         
-
     }
-
-
-
 
 
 function subtracting(){
@@ -61,11 +57,8 @@ function subtracting(){
 }
 
 window.addEventListener('load', displayArr());
-
-add.addEventListener('click', adding);
-subtract.addEventListener('click', subtracting);
-// button.addEventListener('click', () => display.innerHTML = createHex());
-
-
+refresh.addEventListener('click', function(){
+    window.location.reload();
+})
 
 

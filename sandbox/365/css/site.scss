@@ -1,4 +1,9 @@
 /*common code*/
+*{
+    font-family:'Playfair Display', serif;
+
+}
+
 .back{
     color: black;
     text-decoration: none;
@@ -265,13 +270,26 @@ float: left;
 }
 
 #dayEight{
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      
+      .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+      }
     .before{
         margin-top: 5%;
     }
 
     li{
         list-style: none;
-        float: left;
+        // float: left;
         margin: 2%;
     }
 
@@ -283,11 +301,33 @@ float: left;
         float: left;
     }
 
-    li>button{
+    .before>ul>li>button{
         font-size: 50px;
         background: transparent;
         outline: none;
         border: none;
         cursor: pointer;
+    }
+
+    .after>ul>li>button{
+        font-size: 50px;
+        background: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .refresh>a{
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .fa-redo{
+        padding-left: 10px;
+    }
+
+    .explaination>p{
+        font-size: 20px;
     }
 }

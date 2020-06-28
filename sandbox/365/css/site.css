@@ -1,4 +1,8 @@
 /*common code*/
+* {
+  font-family: 'Playfair Display', serif;
+}
+
 .back {
   color: black;
   text-decoration: none;
@@ -242,13 +246,26 @@ span {
   cursor: pointer;
 }
 
+#dayEight .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#dayEight .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
 #dayEight .before {
   margin-top: 5%;
 }
 
 #dayEight li {
   list-style: none;
-  float: left;
   margin: 2%;
 }
 
@@ -260,10 +277,32 @@ span {
   float: left;
 }
 
-#dayEight li > button {
+#dayEight .before > ul > li > button {
   font-size: 50px;
   background: transparent;
   outline: none;
   border: none;
   cursor: pointer;
+}
+
+#dayEight .after > ul > li > button {
+  font-size: 50px;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#dayEight .refresh > a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+#dayEight .fa-redo {
+  padding-left: 10px;
+}
+
+#dayEight .explaination > p {
+  font-size: 20px;
 }
