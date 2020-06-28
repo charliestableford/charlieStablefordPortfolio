@@ -21,7 +21,7 @@ function displayArr(){
 
         button.innerHTML += arr; 
         
-        button.addEventListener('click', adding);
+        button.addEventListener('click', adding)
     })
 
     // arr.forEach(fruit => console.log(fruit));
@@ -30,7 +30,13 @@ function displayArr(){
 
 }
 
-function adding(){
+function adding(e){
+    // console.log(e);
+    //get value of what you click
+    let clicking = e.currentTarget;
+    console.log(clicking);
+    // take that value and put it into the new array.
+
     console.log('added');
     
     let ul = document.createElement('ul');
