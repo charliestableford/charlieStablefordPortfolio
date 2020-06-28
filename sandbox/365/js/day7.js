@@ -2,7 +2,9 @@ console.log('working');
 
 
 const display = document.querySelector('.display');
-let button = document.querySelector('button');
+const button = document.querySelector('button');
+const color = document.querySelector('.box');
+
 // console.log(button);
 
 function createHex(){
@@ -14,7 +16,9 @@ function createHex(){
         let rounded = Math.floor(randNum);
         hex += hexcode[rounded];
     }
+
 return hex;
+
 }
 
 // on click place the outcome of createHex in display.
