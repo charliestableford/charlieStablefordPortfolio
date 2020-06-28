@@ -218,3 +218,18 @@ span {
   font-size: 30px;
   color: black;
 }
+
+#daySeven .display {
+  font-size: 30px;
+}
+
+#daySeven .box {
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+}
+
+#daySeven .wrapper {
+  margin: 5%;
+}

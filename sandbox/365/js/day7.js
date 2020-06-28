@@ -16,10 +16,18 @@ function createHex(){
         let rounded = Math.floor(randNum);
         hex += hexcode[rounded];
     }
-
+    console.log(hex); 
+    color.style.backgroundColor = `${hex}`; 
 return hex;
+}
 
+
+
+function returnColor(hex){
+    console.log(hex);
+  
 }
 
 // on click place the outcome of createHex in display.
 button.addEventListener('click', () => display.innerHTML = createHex());
+// button.addEventListener('click', returnColor);

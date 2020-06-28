@@ -237,3 +237,20 @@ float: left;
         color: black;
     }
 }
+
+#daySeven{
+    .display{
+        font-size: 30px;
+    }
+
+    .box{
+        display: block;
+        width: 150px;
+        height: 150px;
+        background-color: red;
+    }
+
+    .wrapper{
+        margin: 5%;
+    }
+}
