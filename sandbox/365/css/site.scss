@@ -263,3 +263,31 @@ float: left;
         cursor: pointer;
     }
 }
+
+#dayEight{
+    .before{
+        margin-top: 5%;
+    }
+
+    li{
+        list-style: none;
+        float: left;
+        margin: 2%;
+    }
+
+    .wrapper{
+        margin: 5%;
+    }
+
+    .medium{
+        float: left;
+    }
+
+    li>button{
+        font-size: 50px;
+        background: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+}

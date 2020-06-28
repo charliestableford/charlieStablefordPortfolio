@@ -241,3 +241,29 @@ span {
   font-size: 20px;
   cursor: pointer;
 }
+
+#dayEight .before {
+  margin-top: 5%;
+}
+
+#dayEight li {
+  list-style: none;
+  float: left;
+  margin: 2%;
+}
+
+#dayEight .wrapper {
+  margin: 5%;
+}
+
+#dayEight .medium {
+  float: left;
+}
+
+#dayEight li > button {
+  font-size: 50px;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
