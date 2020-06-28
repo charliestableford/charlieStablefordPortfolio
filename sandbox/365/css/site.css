@@ -12,6 +12,7 @@
 .medium {
   min-height: 40px;
   max-height: 40px;
+  margin-top: 50px;
 }
 
 h2 {
@@ -228,8 +229,15 @@ span {
   width: 150px;
   height: 150px;
   background-color: red;
+  margin-bottom: 20px;
 }
 
 #daySeven .wrapper {
   margin: 5%;
+}
+
+#daySeven button {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  cursor: pointer;
 }

@@ -12,6 +12,7 @@
 .medium{
     min-height: 40px;
     max-height: 40px; 
+    margin-top: 50px;
 }
 
 h2{
@@ -206,6 +207,7 @@ float: left;
         margin: 5%;
     }
 
+
     .grid{
         max-width: 30%;
         min-width: 30%;
@@ -248,9 +250,16 @@ float: left;
         width: 150px;
         height: 150px;
         background-color: red;
+        margin-bottom: 20px;
     }
 
     .wrapper{
         margin: 5%;
+    }
+
+    button{
+        font-family:'Playfair Display', serif;
+        font-size: 20px;
+        cursor: pointer;
     }
 }
