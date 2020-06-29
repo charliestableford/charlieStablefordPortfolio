@@ -5,48 +5,33 @@ const alarmSound = document.querySelector('#alarmSound');
 const AmPm = document.querySelector('#AmPm');
 // console.log(alarmSound);
 
-// let date = new Date();
-// let min = date.getMinutes();
-// let hour = date.getHours();
-
 function play(){
     alarmSound.play();
 }
 
-setInterval(function alarming(e){
+function scheduleAlarm(e) {
+
     e.preventDefault();
+  
+    let inputHour = document.querySelector('.inputHour').value;
+    let inputMinute = document.querySelector('.inputMinute').value;
+    let NightDay = document.querySelector('#AmPm').value;
 
-    let date = new Date();
-    let min = date.getMinutes();
-    let hour = date.getHours();
-    let t = hours >= 12 ? 'pm' : 'am';
-    hours = hours % 12;
-    hours = hours ? hours : 12;
-    //current hour and min
-    console.log(hour, min);
-    console.log(inputHour.value, inputMinute.value);
-    //if hour and minutes is equal to each other play audio file
-     
-    if(inputHour.value == hour && inputMinute.value == min && AmPm == t){
-       console.log(alarmSound);
-        //play audio
+    setInterval(function(){
+      
+      let date = new Date;
+  
+      let hours = date.getHours();  
+      let minutes = date.getMinutes();
+      let AmPm = hours >= 12 ? 'pm' : 'am';
+      hours = hours % 12;
+      hours = hours ? hours : 12; 
+      
+      if (inputHour == hours && inputMinute == minutes && NightDay == AmPm){
         play();
-        // return alarmSound.play();
-    } 
-    timing();
-}, 5000);
+      }
+    }, 5000); 
+    
+  }
 
-//update the timing of the page every second
-function timing(){
-    let date = new Date();
-    let min = date.getMinutes();
-    console.log(min);
-    let hour = date.getHours();
-    console.log(hour);
-}
-//update page every second
-setInterval(timing, 1000);
-
-
-
-submit.addEventListener('click', alarming);
+  submit.addEventListener('click', scheduleAlarm);

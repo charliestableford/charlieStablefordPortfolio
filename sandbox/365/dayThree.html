@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alarm </title>
 </head>
-<body>
+<body id="dayThree">
     <div class="wrapper">
         <a href="../365.html" class="back"><i class="fas fa-arrow-left"></i>
-            
         </a>
-        <div class="explaination">
+        
             <h2>Day Three</h2>
     <audio controls src="media/ocean.mp3" id="alarmSound"></audio>
+    <div class="explaination">
+        <p>Enter a time when you would like an alarm to sound. <span class="red">If you leave the browser tab open</span> it will sound on the time you enter!</p>
     <form> 
-        <label for="starting"> hr:</label>
+        <label for="starting"> Hour:</label>
         <input type="number" value="" name="hour" class="inputHour">
-        <label for="starting">minute:</label>
+        <label for="starting">Minute:</label>
         <input type="number" value="" name="minute" class="inputMinute">
         <select id="AmPm">
-            <option>am</option>
-            <option>pm</option>
+            <option>AM</option>
+            <option>PM</option>
           </select>
         <!-- <label for="repeat">interval between alarms</label>
         <input type="form" value="" class="inputTwo"> -->
@@ -29,9 +32,12 @@
 </form>
 <div class="medium">
     <p></p>To read more about this challenge see my medium article here.</p><a href="https://medium.com/@charliestableford2/365-days-of-solvable-javascript-f0986ae3fa0e" target="blank" class="back">
-       <img src="../../imgs/blackM.png" class="medium"><i class="fas fa-arrow-right"></i>
+       <img src="../../imgs/blackM.png" class="medium toHighlight"><i class="fas fa-arrow-right"></i>
     </a>
 </div>
+</div>
 <script src="js/day3.js"></script>
+<script src="../../src/link.js"></script>
+
 </body>
 </html>
