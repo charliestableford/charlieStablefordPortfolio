@@ -10,27 +10,31 @@ console.log('day nine');
 
 //organic eggs $6.79
 // industrial eggs $3.37
-
-function totalLay(){
     let years = 2;
     let hours = 22;
     let daysInYear = 365;
+    let weeksInYear = 56;
+    let AvgOrgDozen = 6.79;
+    let AvgIndustDozen = 3.37;
+
+function totalLay(){
+
 
     let hoursInYear = 24 * daysInYear;
     console.log(hoursInYear);
 
     // get total for a year times 2 for 2 years.
     let eggAmount = Math.round(hoursInYear/hours)*years;
-    console.log(eggAmount);
+    console.log(`Amount of eggs laid in 2 years ${eggAmount}`);
 
     // total amount of organic eggs over 2 years
-    let OGTotal = Math.round(eggAmount/ 12)*6.79;
-    console.log(`Organic egg total is ${OGTotal}`);
+    let OGTotal = Math.round(weeksInYear*AvgOrgDozen)*2;
+    console.log(`Organic egg total for 2 years is $${OGTotal}`);
 
     // total amount of industrial eggs over 2 years
-    let IndustTotal = Math.round(eggAmount/ 12)*3.37;
+    let IndustTotal = Math.round(weeksInYear*AvgIndustDozen)*2;
 
-    console.log(`Industrial egg total is ${IndustTotal}`);
+    console.log(`Industrial egg total for 2 years is $${IndustTotal}`);
 
     
 }
