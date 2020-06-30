@@ -1,5 +1,17 @@
 console.log('day nine');
+
+let numChicks = document.querySelector('.numChicks');
+let yourHourlyRate = document.querySelector('.yourHourlyRate');
+let organicSelect = document.querySelector('.org');
+let group = document.querySelector('.numPpl');
+let feedSelect = document.querySelector('.eat');
+let eatEggs = document.querySelector('.eatEggs');
+let submit = document.querySelector('.submit');
+
+
 // a chicken will lay an egg every 22 hours for 2 years
+
+// if you eat more than ...
 
 // $30/chicken 🐣
 // feed is $15/month🌽
@@ -19,7 +31,7 @@ console.log('day nine');
     //minutes per day
     let chores = 10;
     //$25/hr for your hourly rate
-    let yourHourlyRate = 25;
+    // let yourHourlyRate = 25;
     let years = 2;
     let hours = 22;
     let daysInYear = 365;
@@ -30,10 +42,36 @@ console.log('day nine');
     let avgEggsEaten = (56 *12)*2;
     console.log(`average amount of eggs eatten in a year ${avgEggsEaten}`);
 
+    function handleSubmit(e) {
+        e.preventDefault();
+        
+        eggsTotal();
+        numOfChick();
+    }
+
+    function eggsTotal(){
+        let howManyEggs =eatEggs.options[eatEggs.selectedIndex].value;
+        let org = organicSelect.options[organicSelect.selectedIndex].value;
+
+        let tot = Math.round(howManyEggs * org);
+        // console.log(tot);
+        return tot;
+    }
+
+    function numOfChick(){
+        
+        let numOfPplSharing = group.options[group.selectedIndex].value;
+        let chickens = numChicks.value;
+        let totCost= ((chickens * chickenCost)/numOfPplSharing);
+        console.log(totCost);
+
+        let grade =feedSelect.options[feedSelect.selectedIndex].value;
+        yourHourlyRate = yourHourlyRate.value;
+    }
+
 function totalLay(){
 
     let hoursInYear = 24 * daysInYear;
-    // console.log(hoursInYear);
 
     // get total for a year times 2 for 2 years.
     let eggAmount = Math.round(hoursInYear/hours)*years;
@@ -41,7 +79,9 @@ function totalLay(){
     console.log(`Amount of eggs laid in 2 years ${eggAmount} and amount of dozens is ${
         laidDozens
     }`);
+}
 
+function storeBoughtTotal(){
     // total amount of organic eggs over 2 years
     let OGTotal = Math.round(weeksInYear*AvgOrgDozen)*2;
     console.log(`Organic egg total for 2 years is $${OGTotal}`);
@@ -50,11 +90,7 @@ function totalLay(){
     let IndustTotal = Math.round(weeksInYear*AvgIndustDozen)*2;
 
     console.log(`Industrial egg total for 2 years is $${IndustTotal}`);
-   
 }
 
-function totalBackYardChick(){
-    // yourHourlyRate * 4 = amount of yearly chores
-    let total = (chickenCost * 3) + coop + ((chores * 7)*yourHourlyRate) + (yourHourlyRate *4);
-    console.log(`the total for your backyard chick is $${total}`);
-}
+
+submit.addEventListener('click', handleSubmit);

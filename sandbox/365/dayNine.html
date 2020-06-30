@@ -18,14 +18,57 @@
             <p>
                 Is it profitable to own backyard chickens?
             </p>
-            <div class="chickenCost"></div>
-            <div class="organicEggCost"></div>
-            <div class="industrialEggCost"></div>
-            <div class="howMany">
-                How many eggs do you eat in a week? 🥚 🥚 🥚 🥚 🥚 🥚
+            <form>
+            <div class="numberOfChickens">
+                How many chickens do you want? 
             </div>
-            <input value="" name="numberEatten">
-            <button value="submit">Submit</button>
+            <input value ="" type="number" name ="numChicks"class="numChicks">
+
+            <div class="numberOfPeople">
+                How many folks are sharing a these costs?
+            </div>
+            <select class="numPpl">
+                <option></option>
+                <option value ="1">1</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5</option>
+                <option value ="6">6</option>
+                <option value ="7">7</option>
+            </select>
+
+            <div class="feed">
+                What will you feed them?
+            </div>
+            <select class="eat">
+                <option selected="selected" required></option>
+                <option value="30">High grade</option>
+                <option value ="15">Low grade</option>
+            </select>
+
+            <div class="rate">
+                What is your hourly rate? This is used to calculate the amount of hours spent on chores.
+            </div>
+            <input value="" name = "rate" class="yourHourlyRate" required>
+
+            <div class="howMany">
+                How many eggs do you eat in a week if you were to buy them from the store? 🥚 🥚 🥚 🥚 🥚 🥚
+            </div>
+            <select class="eatEggs">
+                <option></option>
+                <option value =".5">1/2 dozen</option>
+                <option value ="1">1 dozen</option>
+                <option value ="1.5">1 1/2 dozen</option>
+                <option value ="2">2 dozen</option>
+            </select>
+            <select class="org">
+                <option></option>
+                <option value ="6.79">Organic</option>
+                <option value ="3.37">Not Organic</option>
+            </select>
+            <button value="submit" class="submit">Submit</button>
+        </form>
 
             <div class="answer"></div>
 
