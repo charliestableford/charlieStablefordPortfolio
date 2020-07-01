@@ -328,3 +328,19 @@ span {
 #dayEight .explaination > p {
   font-size: 20px;
 }
+
+#dayNine .wrapper {
+  margin: 5%;
+}
+
+#dayNine p {
+  font-size: 20px;
+}
+
+#dayNine .emoji {
+  font-size: 40px;
+}
+
+#dayNine input, #dayNine option {
+  height: 20px;
+}
