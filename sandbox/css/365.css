@@ -86,14 +86,17 @@ img:hover {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   padding: 0 4px;
 }
 
 /* Four column layout */
 .column {
-  flex: 25%;
-  max-width: 25%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 4px;
+  flex: 20%;
+  max-width: 20%;
   padding: 0 4px;
 }
 
