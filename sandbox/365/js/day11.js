@@ -6,10 +6,35 @@ const input = document.querySelector('.input');
 const unscramble = document.querySelector('.unscrambled');
 const submit = document.querySelector('.submit');
 
-submit.addEventListener('click', function(e){
-    e.preventDefault();
 
+async function getWord(e) {
     let inputValue = input.value;
-    console.log(inputValue);
 
-});
+    let endpoint = `https://api.dictionaryapi.dev/api/v1/entries/en/${inputValue}`;
+
+    e.preventDefualt();
+    
+    try {
+      const response = await fetch(endpoint)
+      if (!response.ok) {
+        throw Error(response.statusText);
+      }
+      const json = await response.json();
+      displayQuote(json.message);
+      console.log(json);
+    } catch {
+      console.log('Call failed');
+    } 
+  }
+
+
+function displayQuote(quote) {
+
+    // quote = document.querySelector('#quote').value;
+      let quoteText = document.querySelector('#quote');
+      quoteText.innerHTML = quote;
+    }
+
+submit.addEventListener('click', getWord());
+  
+
