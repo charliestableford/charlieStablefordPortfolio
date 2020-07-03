@@ -27,7 +27,7 @@ async function getQuote() {
 function displayQuote(quote) {
 
 // quote = document.querySelector('#quote').value;
-  const quoteText = document.querySelector('#quote');
+  let quoteText = document.querySelector('#quote');
   quoteText.innerHTML = quote;
 }
 

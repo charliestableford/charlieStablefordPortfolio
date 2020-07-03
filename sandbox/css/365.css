@@ -86,23 +86,24 @@ img:hover {
 
 .row {
   display: flex;
-  flex-flow: row wrap;
-  padding: 0 4px;
+  padding: 0 10px;
 }
 
 /* Four column layout */
 .column {
   display: flex;
-  flex-flow: row wrap;
-  padding: 0 4px;
-  flex: 20%;
-  max-width: 20%;
+  flex: 40%;
+  max-width: 40%;
   padding: 0 4px;
 }
 
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+}
+
+.box {
+  padding: 5px;
 }
 
 /* Two column layout */
