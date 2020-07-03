@@ -92,8 +92,8 @@ img:hover {
 /* Four column layout */
 .column {
   display: flex;
-  flex: 40%;
-  max-width: 40%;
+  flex: 80%;
+  max-width: 80%;
   padding: 0 4px;
 }
 
@@ -109,8 +109,8 @@ img:hover {
 /* Two column layout */
 @media (max-width: 800px) {
   .column {
-    flex: 50%;
-    max-width: 50%;
+    flex: 90%;
+    max-width: 90%;
   }
 }
 
