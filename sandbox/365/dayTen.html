@@ -26,11 +26,11 @@
               <button type="button" id="js-new-quote" class="new-quote button">
                 Get a different quote
               </button>
-              <a class="twitter-share-button"
-              href="https://twitter.com/intent/tweet?text=Hello%20world"
-              data-size="large">
+              <a class="twitter-share-button twitter button" id="js-tweet"
+             target="_blank" rel="noreferrer"
+              data-size="small">
             Tweet</a>
-              <a class="twitter button" id="js-tweet" target="_blank" rel="noreferrer">Tweet it!</a>
+              <!-- <a class="twitter button" id="js-tweet" target="_blank" rel="noreferrer">Tweet it!</a> -->
             </section>
           </div>
 
@@ -40,6 +40,22 @@
     </a>
 </div>
 </div>
+<script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+  
+    return t;
+  }(document, "script", "twitter-wjs"));</script>
 <script src="js/day10.js"></script>
 <script src="../../src/link.js"></script>
 
