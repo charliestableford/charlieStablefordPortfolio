@@ -1,7 +1,7 @@
 console.log('solve');
 
 const twitterButton = document.querySelector('#js-tweet');
-const newQuoteButton = document.querySelector('#js-new-quote');
+const newQuoteButton = document.querySelector('#nextQuote');
 newQuoteButton.addEventListener('click', getQuote);
 
 const endpoint = 'https://api.whatdoestrumpthink.com/api/v1/quotes/random';

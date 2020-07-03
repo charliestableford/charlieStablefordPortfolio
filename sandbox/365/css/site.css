@@ -362,3 +362,12 @@ span {
 #dayTen .explaination {
   font-size: 20px;
 }
+
+#dayTen .new-quote {
+  font-size: 20px;
+  background: black;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+  padding: 0px 5px 0px 5px;
+}
