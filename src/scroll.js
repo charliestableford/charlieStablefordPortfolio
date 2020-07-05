@@ -43,3 +43,16 @@ function headerHighlight(){
         nav.style.backgroundColor = `transparent`;
     }
 }
+
+let download = document.querySelector('.download');
+
+function download() {
+
+    if (confirm ('Download file?')) {
+        location.href = 'charlieStablefordResume.pdf';
+    }
+
+    return false;
+}
+
+download.addEventListener('click', download());
