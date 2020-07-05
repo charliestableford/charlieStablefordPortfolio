@@ -22,9 +22,10 @@ console.log('scrolling');
 
 const amount = document.body;
 const rootElement = document.documentElement;
-const li = document.querySelector('li>a');
-const ul = document.querySelector('ul');
-const nav = document.querySelector('nav');
+// const li = document.querySelector('li>a');
+// const ul = document.querySelector('ul');
+// const nav = document.querySelector('nav');
+const up = document.querySelector('.up');
 
 
 // call immediately
@@ -33,26 +34,15 @@ window.onscroll = function(){
 }
 
 function headerHighlight(){
-    console.log(rootElement);
+    // console.log(rootElement);
     if(amount.scrollTop > 100 || rootElement.scrollTop > 100 ){
-        nav.style.backgroundColor= `rgba(241, 59, 57, .75)`;
-        nav.style.borderRadius=`100px`;
-        nav.style.zIndex=`10`;
+        // up.style.backgroundColor= `rgba(241, 59, 57, .75)`;
+        // up.style.borderRadius=`100px`;
+        // up.style.zIndex=`10`;
+        up.style.display = `block`;
 
     } else {
-        nav.style.backgroundColor = `transparent`;
+        // nav.style.backgroundColor = `transparent`;
+        up.style.display = `none`;
     }
 }
-
-let download = document.querySelector('.download');
-
-function download() {
-
-    if (confirm ('Download file?')) {
-        location.href = 'charlieStablefordResume.pdf';
-    }
-
-    return false;
-}
-
-download.addEventListener('click', download());
