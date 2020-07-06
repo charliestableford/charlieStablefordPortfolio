@@ -123,6 +123,16 @@ a {
   cursor: pointer;
 }
 
+.abstractThree {
+  z-index: -1;
+  position: relative;
+}
+
+.abstractFour {
+  z-index: -1;
+  position: relative;
+}
+
 .email {
   transform: rotate(-90deg);
   position: fixed;
@@ -365,6 +375,7 @@ main {
 .workTitle {
   color: #4a56bb;
   font-size: 1.25em;
+  font-family: "Open Sans", sans-serif;
 }
 
 .abstractOne {
@@ -380,6 +391,11 @@ main {
   right: 5%;
   z-index: -1;
   opacity: .75;
+}
+
+.dribLogo {
+  min-width: 30%;
+  max-width: 30%;
 }
 
 a.video {
