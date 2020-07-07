@@ -435,6 +435,33 @@ body {
   margin-top: 200px;
 }
 
+.CTA {
+  background: #191f38;
+  color: white;
+  font-size: 1.25em;
+  align-items: center;
+  width: 350px;
+  height: 70px;
+  float: left;
+  z-index: 2;
+  position: relative;
+  border-radius: 100px;
+  text-decoration: none;
+  margin-bottom: 100px;
+}
+
+.CTA > p {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.btmCTA {
+  text-decoration: none;
+}
+
 .itemLeft {
   display: flex;
   justify-content: left;
