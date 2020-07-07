@@ -244,7 +244,7 @@ $blue: #191f38;
     color: white;
     text-decoration: none;
     margin-left: 20px;
-    border: 1px white solid;
+    // border: 1px white solid;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -252,6 +252,10 @@ $blue: #191f38;
     border-radius: 100px;
     position: absolute;
     top: 80px;
+  }
+
+  a.item.back{
+    font-size: 40px;
   }
 
   body {
@@ -274,7 +278,7 @@ $blue: #191f38;
     display: flex;
     justify-content: left;
     align-items: left;
-    font-size: 18px;
+    font-size: 1.5em;
   }
 
   .zoom {
@@ -311,7 +315,7 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.5em;
   }
 
   .upper{
@@ -471,11 +475,11 @@ transition: 1s ease-in-out;
 }
 
 .lgMarg{
-    margin-top: 90px;
+    margin-top: 200px;
 }
 
 .section{
-    margin-top: 100px;
+    margin-top: 400px;
     margin-right: 10%;
 }
 
@@ -690,9 +694,9 @@ background: #ff9d00;
     display: block;
   }
 
-  .back{
-    display: none;
-  }
+  // .back{
+  //   display: none;
+  // }
 
   .download{
     display: none;
