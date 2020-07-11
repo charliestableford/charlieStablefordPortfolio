@@ -371,3 +371,9 @@ span {
   border-radius: 5px;
   padding: 0px 5px 0px 5px;
 }
+
+@media (max-width: 375px) {
+  .body {
+    font-size: 1.2em;
+  }
+}
