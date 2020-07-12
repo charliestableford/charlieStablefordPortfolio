@@ -11,12 +11,14 @@ const numEight = document.querySelector('.eight');
 const numNine = document.querySelector('.nine');
 const numZero = document.querySelector('.zero');
 
-function displayNum(numOne){
-    //disaply the clicked number in the input field
-    let pressValue = numOne.value;
-    console.log(pressValue);
-    console.log('clicked one');
+
+function displayNum(e){
+    //display the clicked number in the input field
+    let pressed = e.target.value;
+    console.log(pressed);
+    let text = pressed;
+    
 }
 
-numOne.addEventListener('click', displayNum);
+window.addEventListener('click', displayNum);
 
