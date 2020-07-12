@@ -372,6 +372,14 @@ span {
   padding: 0px 5px 0px 5px;
 }
 
+#dayTwelve li {
+  list-style: none;
+}
+
+#dayTwelve .calc {
+  display: flex;
+}
+
 @media (max-width: 375px) {
   .body {
     font-size: 1.2em;

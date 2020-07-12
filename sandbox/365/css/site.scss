@@ -404,7 +404,13 @@ float: left;
 }
 
 #dayTwelve{
-    
+   li{
+       list-style: none;
+   }
+
+   .calc{
+       display: flex;
+   }
 }
 
 @media (max-width: 375px) {
