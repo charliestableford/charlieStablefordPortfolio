@@ -18,8 +18,11 @@ function displayNum(e){
     //display the clicked number in the input field
     let pressed = e.target.value;
     
-    pressed = input.innerHTML;
-console.log(pressed);
+    // console.log(input);
+    if (pressed) {
+        console.log(`you pressed ${pressed}`);
+        input = pressed.innerHTML;
+    }
 
     
 }
