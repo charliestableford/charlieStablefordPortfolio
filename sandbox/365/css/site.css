@@ -349,6 +349,10 @@ span {
   font-size: 1.75em;
 }
 
+#dayTen {
+  font-family: 'Playfair Display', serif;
+}
+
 #dayTen .quoteOutput {
   width: 300px;
   height: 200px;
