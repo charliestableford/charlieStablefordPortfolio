@@ -21,7 +21,8 @@ function displayNum(e){
     // console.log(input);
     if (pressed) {
         console.log(`you pressed ${pressed}`);
-        input = pressed.innerHTML;
+        // console.log(input);
+        input.value = `${pressed}`;
     }
 
     
