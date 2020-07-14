@@ -143,6 +143,10 @@ span {
   font-size: 1.5em;
 }
 
+#dayFive {
+  font-family: 'Playfair Display', serif;
+}
+
 #dayFive .toHighLight {
   cursor: pointer;
 }
@@ -214,6 +218,10 @@ span {
   transform: scale(1.4);
 }
 
+#daySix {
+  font-family: 'Playfair Display', serif;
+}
+
 #daySix .wrapper {
   margin: 5%;
 }
@@ -246,6 +254,10 @@ span {
   color: black;
 }
 
+#daySeven {
+  font-family: 'Playfair Display', serif;
+}
+
 #daySeven .display {
   font-size: 30px;
 }
@@ -266,6 +278,10 @@ span {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   cursor: pointer;
+}
+
+#dayEight {
+  font-family: 'Playfair Display', serif;
 }
 
 #dayEight .row {
@@ -327,6 +343,10 @@ span {
 
 #dayEight .explaination > p {
   font-size: 20px;
+}
+
+#dayNine {
+  font-family: 'Playfair Display', serif;
 }
 
 #dayNine .wrapper {
