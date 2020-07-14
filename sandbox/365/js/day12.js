@@ -10,6 +10,10 @@ const numSeven = document.querySelector('.seven');
 const numEight = document.querySelector('.eight');
 const numNine = document.querySelector('.nine');
 const numZero = document.querySelector('.zero');
+const plus = document.querySelector('.plus');
+const minus = document.querySelector('.minus');
+
+
 
 let input = document.querySelector('.input');
 
@@ -23,6 +27,7 @@ function displayNum(e){
         console.log(`you pressed ${pressed}`);
         // console.log(input);
         input.value = `${pressed}`;
+
     }
 
     
