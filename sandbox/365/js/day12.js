@@ -18,7 +18,7 @@ const minus = document.querySelector('.minus');
 let input = document.querySelector('.input');
 
 
-function displayNum(e){
+function handleClick(e){
     //display the clicked number in the input field
     let pressed = e.target.value;
     
@@ -33,5 +33,5 @@ function displayNum(e){
     
 }
 
-window.addEventListener('click', displayNum);
+window.addEventListener('click', handleClick);
 
