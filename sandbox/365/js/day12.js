@@ -11,7 +11,7 @@ const numEight = document.querySelector('.eight');
 const numNine = document.querySelector('.nine');
 const numZero = document.querySelector('.zero');
 const plus = document.querySelector('.plus');
-let minus = document.querySelector('.minus');
+const minus = document.querySelector('.minus');
 
 
 
@@ -19,23 +19,25 @@ let input = document.querySelector('.input');
 
 
 function handleClick(e){
+    // const clicked = e.currentTarget.value;
+    // console.log(clicked);
     //display the clicked number in the input field
     let pressed = e.target.value;
-   
-    console.log(minus);
+    // console.log(pressed.minus);
     
     // console.log(input);
     if (pressed) {
-        console.log(`you pressed ${pressed}`);
+        // console.log(`you pressed ${pressed}`);
         // console.log(input);
-        input.value = `${pressed}`;
+        input.value = `${pressed}`;   
+          
     } 
-    
-    else if(pressed == minus) {
-        let minus = document.querySelector('.minus');
-        console.log(minus);
-    }
-
+    if (e.target.matches(minus)) {
+        console.log('minus');
+      }
+     
+    // console.log(pressed);
+    // return pressed;
     
 }
 
