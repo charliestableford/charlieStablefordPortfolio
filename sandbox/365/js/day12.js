@@ -16,6 +16,7 @@ const minus = document.querySelector('.minus');
 
 
 let input = document.querySelector('.input');
+let problemArr = [];
 
 
 function handleClick(e){
@@ -30,16 +31,18 @@ function handleClick(e){
         // console.log(`you pressed ${pressed}`);
         // console.log(input);
         input.value = `${pressed}`;   
-          
+        problemArr.push();
+        console.log(problemArr);
     } 
-    if (e.target.matches(minus)) {
-        console.log('minus');
-      }
      
     // console.log(pressed);
     // return pressed;
     
 }
+
+// if you press enter then prevent default and do the math. 
+// loop through what was pressed
+
 
 window.addEventListener('click', handleClick);
 
