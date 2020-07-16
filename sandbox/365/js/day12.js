@@ -31,9 +31,16 @@ function handleClick(e){
         // console.log(`you pressed ${pressed}`);
         // console.log(input);
         input.value = `${pressed}`;   
-        problemArr.push();
+        problemArr.push(pressed);
         console.log(problemArr);
-    } 
+
+     pressed.forEach(press =>
+                press.addEventListener('click', function(e){
+                    console.log(e.currentTarget);
+                })
+            );
+    }     
+   
      
     // console.log(pressed);
     // return pressed;
