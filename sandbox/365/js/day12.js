@@ -32,12 +32,28 @@ function handleClick(e){
         // console.log(input);
         input.value = `${pressed}`;   
         problemArr.push(pressed);
-        console.log(problemArr);
+       
+        let parsed =parseInt(problemArr);
 
-     pressed.forEach(press =>
-                press.addEventListener('click', function(e){
-                    console.log(e.currentTarget);
-                })
+         console.log(parsed);
+
+        const add = (a,b) => {
+         a+b;
+        }
+
+        
+
+          // const add = (a,b) => {
+        //  a+b;
+        // }
+
+        const sum = problemArr.reduce(add);
+
+     problemArr.forEach(press =>
+                
+                console.log(press),
+                
+                console.log(sum)
             );
     }     
    
