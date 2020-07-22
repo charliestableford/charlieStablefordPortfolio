@@ -201,7 +201,7 @@ float: left;
         padding: 3rem;
         border-radius: 1rem;
         width: 500px;
-        margin: 2rem 0;
+        margin: 2rem 0; 
       }
       
       .shopping-list ul {
@@ -294,8 +294,9 @@ float: left;
 
     button{
         font-family:'Playfair Display', serif;
-        font-size: 20px;
         cursor: pointer;
+        background: transparent;
+        border: none;
     }
 }
 

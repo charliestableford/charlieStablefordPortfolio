@@ -280,8 +280,9 @@ span {
 
 #daySeven button {
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
   cursor: pointer;
+  background: transparent;
+  border: none;
 }
 
 #dayEight {
