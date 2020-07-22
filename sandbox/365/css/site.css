@@ -316,10 +316,6 @@ span {
   margin: 5%;
 }
 
-#dayEight .medium {
-  float: left;
-}
-
 #dayEight .before > ul > li > button {
   font-size: 50px;
   background: transparent;
@@ -337,17 +333,12 @@ span {
 }
 
 #dayEight .refresh > a {
-  font-size: 20px;
   text-decoration: none;
   color: black;
 }
 
 #dayEight .fa-redo {
   padding-left: 10px;
-}
-
-#dayEight .explaination > p {
-  font-size: 20px;
 }
 
 #dayNine {
