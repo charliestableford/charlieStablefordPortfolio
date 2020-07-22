@@ -349,20 +349,12 @@ span {
   margin: 5%;
 }
 
-#dayNine p {
-  font-size: 20px;
-}
-
 #dayNine .emoji {
   font-size: 40px;
 }
 
 #dayNine input, #dayNine select {
   height: 20px;
-}
-
-#dayNine .profit {
-  font-size: 1.75em;
 }
 
 #dayTen {
