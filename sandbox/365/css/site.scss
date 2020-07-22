@@ -418,6 +418,16 @@ float: left;
    }
 }
 
+@media (max-width: 575px) {
+    .body{
+        font-size: 1.2em;
+    }
+
+    .medium{
+        font-size: 1.2em;
+    }
+}
+
 @media (max-width: 375px) {
     .body{
         font-size: 1.2em;
