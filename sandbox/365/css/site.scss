@@ -418,9 +418,20 @@ float: left;
    }
 }
 
+@media (max-width: 1000px) {
+    .body{
+        font-size: 1.5em;
+    }
+
+    .medium{
+        font-size: 1.2em;
+    }
+}
+
+
 @media (max-width: 575px) {
     .body{
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     .medium{
