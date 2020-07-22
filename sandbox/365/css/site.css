@@ -169,12 +169,12 @@ span {
 }
 
 #dayFive .fa-plus-square, #dayFive .fa-check-square {
-  font-size: 30px;
+  font-size: 3em;
   color: #f13b39;
 }
 
 #dayFive .itemName {
-  font-size: 20px;
+  font-size: 1.2em;
   color: black;
 }
 
