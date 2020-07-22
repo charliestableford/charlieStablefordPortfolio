@@ -364,7 +364,6 @@ span {
 #dayTen .quoteOutput {
   width: 300px;
   height: 200px;
-  font-size: 20px;
 }
 
 #dayTen .wrapper {
@@ -376,7 +375,6 @@ span {
 }
 
 #dayTen .new-quote {
-  font-size: 20px;
   background: black;
   color: white;
   outline: none;
