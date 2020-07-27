@@ -6,6 +6,7 @@ async function dribConnect(){
     let accesstoken = ``;
 
     // reasons why the postman doesn't work?
+    // email the dribbble folks.
 
     let endpoint = `https://api.dribbble.com/v1/${user}?access_token=OAUTH_TOKEN`;
 }
