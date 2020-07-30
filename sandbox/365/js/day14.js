@@ -204,5 +204,5 @@ function poetry() {
         "without"
     ];
 
-    return `${rando(adjectives)}-${rando(adjectives)}-${rando(nouns)}`;
+    return `${rando(conjunction)}-${rando(adjectives)}-${rando(conjunction)}-${rando(nouns)}-${rando(verb)}`;
   }
