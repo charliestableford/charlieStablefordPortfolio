@@ -204,5 +204,14 @@ function poetry() {
         "without"
     ];
 
-    return `${rando(conjunction)}-${rando(adjectives)}-${rando(conjunction)}-${rando(nouns)}-${rando(verb)}`;
+    const pronoun =[
+        "he",
+        "him",
+        "her",
+        "she",
+        "they",
+        "them"
+    ];
+
+    return `${rando(pronoun)} ${rando(verb)} ${rando(conjunction)} ${rando(nouns)} ${rando(verb)}`;
   }
