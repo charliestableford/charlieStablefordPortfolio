@@ -1,3 +1,7 @@
+function rando(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
 function poetry() {
     const adjectives = [
       "adorable",
@@ -151,6 +155,53 @@ function poetry() {
         "or",
         "yet",
         "so"
+    ];
+
+    const prepositions =[
+        "about",
+        "above",
+        "across",
+        "after",
+        "against",
+        "along",
+        "amoung",
+        "around",
+        "at",
+        "before",
+        "behind",
+        "between",
+        "beyond",
+        "but",
+        "by",
+        "concerning",
+        "despite",
+        "down",
+        "during",
+        "except",
+        "following",
+        "for",
+        "from",
+        "including",
+        "in",
+        "into",
+        "like",
+        "near",
+        "of",
+        "off",
+        "on",
+        "out",
+        "over",
+        "plus",
+        "since",
+        "through",
+        "throughout",
+        "to",
+        "towards",
+        "under",
+        "until",
+        "up",
+        "with",
+        "without"
     ];
 
     return `${rando(adjectives)}-${rando(adjectives)}-${rando(nouns)}`;
