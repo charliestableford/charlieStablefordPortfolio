@@ -221,11 +221,11 @@ function handleClick() {
     ];
 
     lilboxes.innerHTML = 
-    `<p>${rando(pronoun)}</p> 
-    <p>${rando(verb)} </p>
-    <p>${rando(conjunction)} </p>
-    <p>${rando(nouns)} </p>
-    <p>${rando(verb)}</p>`;
+    `<p class="after">${rando(pronoun)}</p> 
+    <p class="after">${rando(verb)} </p>
+    <p class="after">${rando(conjunction)} </p>
+    <p class="after">${rando(nouns)} </p>
+    <p class="after">${rando(verb)}</p>`;
 
     // return `${rando(pronoun)} ${rando(verb)} ${rando(conjunction)} ${rando(nouns)} ${rando(verb)}`;
   }
