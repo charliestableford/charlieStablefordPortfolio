@@ -1,3 +1,6 @@
+const lilboxes = document.querySelector('lilboxes');
+const button = document.querySelector('button');
+
 function rando(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
   }
@@ -184,6 +187,7 @@ function poetry() {
         "including",
         "in",
         "into",
+        "is",
         "like",
         "near",
         "of",
@@ -215,3 +219,5 @@ function poetry() {
 
     return `${rando(pronoun)} ${rando(verb)} ${rando(conjunction)} ${rando(nouns)} ${rando(verb)}`;
   }
+
+  button.addEventListener('click', poetry);
