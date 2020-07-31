@@ -1,11 +1,14 @@
-const lilboxes = document.querySelector('lilboxes');
+const lilboxes = document.querySelector('.lilboxes');
+console.log(lilboxes);
 const button = document.querySelector('button');
+console.log(button);
 
 function rando(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
   }
 
-function poetry() {
+function handleClick() {
+    console.log('in handleClick');
     const adjectives = [
       "adorable",
       "beautiful",
@@ -217,7 +220,14 @@ function poetry() {
         "them"
     ];
 
-    return `${rando(pronoun)} ${rando(verb)} ${rando(conjunction)} ${rando(nouns)} ${rando(verb)}`;
+    lilboxes.innerHTML = 
+    `<p>${rando(pronoun)}</p> 
+    <p>${rando(verb)} </p>
+    <p>${rando(conjunction)} </p>
+    <p>${rando(nouns)} </p>
+    <p>${rando(verb)}</p>`;
+
+    // return `${rando(pronoun)} ${rando(verb)} ${rando(conjunction)} ${rando(nouns)} ${rando(verb)}`;
   }
 
-  button.addEventListener('click', poetry);
+  button.addEventListener('click', handleClick);
