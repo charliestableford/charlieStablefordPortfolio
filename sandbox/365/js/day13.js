@@ -5,10 +5,15 @@ async function dribConnect(){
     let user = `charliestableford`;
     let accesstoken = ``;
 
-    // reasons why the postman doesn't work?
-    // email the dribbble folks.
 
     let endpoint = `https://api.dribbble.com/v1/${user}?access_token=OAUTH_TOKEN`;
+}
+
+{
+    "access_token": "ff934f4e1e26cbaeab48625792ac315bfba6e2678d7b2b2947c097b95bd2b7ae",
+    "token_type": "Bearer",
+    "scope": "public",
+    "created_at": 1596231192
 }
 
 // async function getWord(e) {
