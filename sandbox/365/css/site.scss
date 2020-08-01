@@ -422,34 +422,17 @@ float: left;
    }
 }
 
-#dayFourteen{
-    .after{
-        font-size: 1.5em;
-        float: left;
-        margin-left: 10px;
-        border: black .5px solid;
-        padding: 0px 20px 0px 20px;
-        box-shadow: 3px 3px 7px -4px rgba(0,0,0,0.5);
+#dayThirteen{
+
+    .dribLogo{
+        // background: url('../../../imgs/dribbble.svg');
+        min-height: 50px;
+        max-height: 50px;
     }
+
     .wrapper{
         margin: 5%;
     }
-
-    button{
-        font-size: 1.5em;
-        margin-bottom: 25px;
-    }
-
-    .nolink{
-        color: black;
-        text-decoration: none;
-    }
-
-    .lilboxes{
-        height: 5vh;
-
-    }
-
     #dribbbleShots {
         box-sizing: border-box;
         display: -webkit-box;
@@ -493,7 +476,7 @@ float: left;
         content: "";
         width: 1000px;
         height: 1000px;
-        background: rgba(33, 43, 185, 0.93);
+        background: rgba(0, 0, 0, 0.6);
         top: 0;
         left: 0;
         transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.5s;
@@ -542,6 +525,37 @@ float: left;
         transform: translate(-35%, -43%) rotate(60deg);
         transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.5s;
     }
+
+}
+
+#dayFourteen{
+    .after{
+        font-size: 1.5em;
+        float: left;
+        margin-left: 10px;
+        border: black .5px solid;
+        padding: 0px 20px 0px 20px;
+        box-shadow: 3px 3px 7px -4px rgba(0,0,0,0.5);
+    }
+    .wrapper{
+        margin: 5%;
+    }
+
+    button{
+        font-size: 1.5em;
+        margin-bottom: 25px;
+    }
+
+    .nolink{
+        color: black;
+        text-decoration: none;
+    }
+
+    .lilboxes{
+        height: 5vh;
+
+    }
+
 
 }
 

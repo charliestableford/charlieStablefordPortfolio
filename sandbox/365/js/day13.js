@@ -42,3 +42,4 @@ async function displayDrib(){
 //     "created_at": 1596231192
 // }
 
+window.onload(displayDrib());
