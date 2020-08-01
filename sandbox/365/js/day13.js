@@ -12,17 +12,15 @@ async function dribConnect(){
     return data;
 } 
 
-function displayDrib(data){
-    const shots = dribConnect();
+async function displayDrib(){
+    const shots = await dribConnect();
     console.log(shots);
-
-    console.log(data);
     let ul = document.querySelector('#dribbbleShots');
-    // ul.innerHTML =
-    // `<li class="shot" target="_blank" href="${data.html_url}">
-    //     <div class="title">${data.title}</div>
-    //     <img src="${data.images.hidpi}"/>
-    // </li>`;
+    ul.innerHTML =
+    `<li class="shot" target="_blank" href="${shots.html_url}">
+        <div class="title">${shots.title}</div>
+        <img src="${shots.images.hidpi}"/>
+    </li>`;
 }
 
 
