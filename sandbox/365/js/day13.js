@@ -3,18 +3,37 @@ console.log('made it in here');
 async function dribConnect(){
 
     let user = `charliestableford`;
-    let accesstoken = ``;
+    let accesstoken = `ff934f4e1e26cbaeab48625792ac315bfba6e2678d7b2b2947c097b95bd2b7ae`;
 
 
     let endpoint = `https://api.dribbble.com/v1/${user}?access_token=OAUTH_TOKEN`;
+
+    try {
+      const response = await fetch(endpoint)
+      if (!response.ok) {
+        throw Error(response.statusText);
+      }
+      const json = await response.json();
+      displayDrib(json.message);
+      console.log(json);
+    } catch {
+      console.log('Call failed');
+    } 
 }
 
-{
-    "access_token": "ff934f4e1e26cbaeab48625792ac315bfba6e2678d7b2b2947c097b95bd2b7ae",
-    "token_type": "Bearer",
-    "scope": "public",
-    "created_at": 1596231192
+function displayDrib(shot){
+    let ul = document.querySelector('#dribbbleShots');
+    ul.innerHTML = shot;
 }
+
+
+
+// {
+//     "access_token": "ff934f4e1e26cbaeab48625792ac315bfba6e2678d7b2b2947c097b95bd2b7ae",
+//     "token_type": "Bearer",
+//     "scope": "public",
+//     "created_at": 1596231192
+// }
 
 // async function getWord(e) {
 //     let inputValue = input.value;
