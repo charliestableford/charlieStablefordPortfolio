@@ -5,8 +5,7 @@ async function dribConnect(){
     let user = `charliestableford`;
     let accesstoken = `ff934f4e1e26cbaeab48625792ac315bfba6e2678d7b2b2947c097b95bd2b7ae`;
 
-
-    let endpoint = `https://api.dribbble.com/v1/${user}?access_token=OAUTH_TOKEN`;
+    let endpoint = `https://api.dribbble.com/v2/user/shots?access_token=${accesstoken}`;
 
     try {
       const response = await fetch(endpoint)
@@ -14,16 +13,21 @@ async function dribConnect(){
         throw Error(response.statusText);
       }
       const json = await response.json();
+    //   displayDrib();
       displayDrib(json.message);
-      console.log(json);
+    //   console.log(json);
     } catch {
       console.log('Call failed');
     } 
 }
 
-function displayDrib(shot){
+function displayDrib(){
+    console.log('in over here now');
+
     let ul = document.querySelector('#dribbbleShots');
-    ul.innerHTML = shot;
+    ul.innerHTML = `<li class="shot" target="_blank" href="'+ val.html_url +'" title="' + val.title + '">
+    <div class="title">' + val.title + '</div>
+    <img src="'+ val.images.hidpi +'"/></li>`;
 }
 
 
@@ -35,22 +39,3 @@ function displayDrib(shot){
 //     "created_at": 1596231192
 // }
 
-// async function getWord(e) {
-//     let inputValue = input.value;
-
-//     let endpoint = `https://api.dictionaryapi.dev/api/v1/entries/en/${inputValue}`;
-
-//     e.preventDefualt();
-    
-//     try {
-//       const response = await fetch(endpoint)
-//       if (!response.ok) {
-//         throw Error(response.statusText);
-//       }
-//       const json = await response.json();
-//       displayQuote(json.message);
-//       console.log(json);
-//     } catch {
-//       console.log('Call failed');
-//     } 
-//   }
