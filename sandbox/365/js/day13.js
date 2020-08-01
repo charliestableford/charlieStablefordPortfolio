@@ -5,26 +5,24 @@ async function dribConnect(){
 
     let endpoint = `https://api.dribbble.com/v2/user/shots?access_token=${accesstoken}`;
 
-    try {
       const response = await fetch(endpoint)
-      if (!response.ok) {
-        throw Error(response.statusText);
-      }
-      const json = await response.json();
-    //   displayDrib();
-      displayDrib(json.message);
-    //   console.log(json.html_url);
-      console.log(json);
-    } catch {
-      console.log('Call failed');
-    } 
-}
+      const data = await response.json();
+    //   console.log(data);
+     
+    return data;
+} 
 
-function displayDrib(){
-    console.log('in over here now');
+function displayDrib(data){
+    const shots = dribConnect();
+    console.log(shots);
 
+    console.log(data);
     let ul = document.querySelector('#dribbbleShots');
-    ul.innerHTML = `I got in there...`;
+    // ul.innerHTML =
+    // `<li class="shot" target="_blank" href="${data.html_url}">
+    //     <div class="title">${data.title}</div>
+    //     <img src="${data.images.hidpi}"/>
+    // </li>`;
 }
 
 
