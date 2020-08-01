@@ -16,11 +16,21 @@ async function displayDrib(){
     const shots = await dribConnect();
     console.log(shots);
     let ul = document.querySelector('#dribbbleShots');
-    ul.innerHTML =
-    `<li class="shot" target="_blank" href="${shots.html_url}">
-        <div class="title">${shots.title}</div>
-        <img src="${shots.images.hidpi}"/>
-    </li>`;
+
+    const html = shots.map(
+        shots => `<li class="shot">
+                    <div class="title">${shots.title}</div>
+                    <img src="${shots.images.normal}"/>
+                  </li>`
+    );
+
+    ul.innerHTML = html.join('');
+
+    // ul.innerHTML =
+    // `<li class="shot" target="_blank" href="${shots.html_url}">
+    //     <div class="title">${shots.title}</div>
+    //     <img src="${shots.images.hidpi}"/>
+    // </li>`;
 }
 
 
