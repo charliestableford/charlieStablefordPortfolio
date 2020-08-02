@@ -554,8 +554,12 @@ float: left;
         height: 5vh;
 
     }
+}
 
-
+#dayFifteen{
+    .wrapper{
+        margin: 5%;
+    }
 }
 
 @media (max-width: 1000px) {
