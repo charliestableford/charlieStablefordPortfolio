@@ -20,7 +20,7 @@ async function displayDrib(){
     const html = shots.map(
         shots => `<li class="shot">
                     <div class="title">${shots.title}</div>
-                    <img src="${shots.images.normal}"/>
+                    <img src="${shots.images.hidpi}"/>
                   </li>`
     );
 
