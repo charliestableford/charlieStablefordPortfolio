@@ -3,7 +3,7 @@ console.log('made it in here');
 async function dribConnect(){
     let accesstoken = `ff934f4e1e26cbaeab48625792ac315bfba6e2678d7b2b2947c097b95bd2b7ae`;
 
-    let endpoint = `https://api.dribbble.com/v2/user/shots?access_token=${accesstoken}`;
+    let endpoint = `https://api.dribbble.com/v2/user/shots?access_token=${accesstoken}&per_page=20`;
 
       const response = await fetch(endpoint)
       const data = await response.json();
