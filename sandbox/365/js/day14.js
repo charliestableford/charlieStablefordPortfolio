@@ -227,7 +227,7 @@ function handleClick() {
     <p class="after">${rando(nouns)} </p>
     <p class="after">${rando(verb)}</p>`;
 
-    // return `${rando(pronoun)} ${rando(verb)} ${rando(conjunction)} ${rando(nouns)} ${rando(verb)}`;
+
   }
 
   button.addEventListener('click', handleClick);
