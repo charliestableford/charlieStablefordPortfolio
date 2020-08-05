@@ -21,7 +21,7 @@ async function displayDrib(){
         shots => `<li class="shot">
                     <a href="https://dribbble.com/charliestableford">
                     <div class="title">${shots.title}</div>
-                    <img src="${shots.images.hidpi}"/>
+                    <img src="${shots.images.normal}"/>
                     </a>
                   </li>`
     );
