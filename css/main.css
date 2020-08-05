@@ -440,6 +440,7 @@ a > .view {
   background: #4a56bb;
   padding: 15px;
   z-index: 1;
+  margin-top: 50px;
 }
 
 .fa-arrow-right {
