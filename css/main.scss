@@ -85,7 +85,7 @@ a{
     }
 
     .marginTop{
-        margin-top: 150px;
+        margin-top: 50px;
     }
 
 .outline{
@@ -106,9 +106,18 @@ a{
 }
 
 .abstractFour{
-    z-index: -1;
+    z-index: -10;
     position: relative;
 }
+.abstractTwo{
+    z-index: -10;
+    position: absolute;
+    right: 200px;
+}
+
+// .hgt{
+//     height: 50px;
+// }
 
 .email{
     transform: rotate(-90deg);
@@ -305,7 +314,10 @@ span.highlight{
 }
 
 .margTop{
-    margin-top: 50px;
+    margin-top: 150px;
+}
+.margTopMini{
+    margin-top: 20px;
 }
 
 // #dribbbleShots {
@@ -407,7 +419,7 @@ span.highlight{
     float: left;
     z-index: 2;
     position: relative;
-    border-radius: 100px;
+    // border-radius: 100px;
 }
 
 .CTA>p{
@@ -461,14 +473,15 @@ a>p>.view{
 
 a>.view{
     margin-top: 30px;
+    width: 300px;
     // color: $black;
     color: white;
     font-family: $open;
-    background: $red;
-    padding: 5px;
-    border-radius: 100px;
+    background: $darkBlue;
+    padding: 15px;
+    // border-radius: 100px;
     z-index: 1;
-    text-align: right;
+    // text-align: left;
 }
 
 .fa-arrow-right{
@@ -495,7 +508,7 @@ main{
 }
 
 #work{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .workTitle{
@@ -592,6 +605,10 @@ a.video{
 .toolPart{
     max-width: 44px;
     min-width: 44px;
+}
+
+.descript{
+    margin-bottom: 20px;
 }
 
 @media(max-width: 1850px) {

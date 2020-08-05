@@ -109,7 +109,7 @@ a {
 }
 
 .marginTop {
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .outline {
@@ -129,8 +129,14 @@ a {
 }
 
 .abstractFour {
-  z-index: -1;
+  z-index: -10;
   position: relative;
+}
+
+.abstractTwo {
+  z-index: -10;
+  position: absolute;
+  right: 200px;
 }
 
 .email {
@@ -292,7 +298,11 @@ span.highlight {
 }
 
 .margTop {
-  margin-top: 50px;
+  margin-top: 150px;
+}
+
+.margTopMini {
+  margin-top: 20px;
 }
 
 .name {
@@ -373,7 +383,6 @@ span.highlight {
   float: left;
   z-index: 2;
   position: relative;
-  border-radius: 100px;
 }
 
 .CTA > p {
@@ -425,13 +434,12 @@ a > p > .view {
 
 a > .view {
   margin-top: 30px;
+  width: 300px;
   color: white;
   font-family: "Open Sans", sans-serif;
-  background: #f13b39;
-  padding: 5px;
-  border-radius: 100px;
+  background: #4a56bb;
+  padding: 15px;
   z-index: 1;
-  text-align: right;
 }
 
 .fa-arrow-right {
@@ -458,7 +466,7 @@ main {
 }
 
 #work {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .workTitle {
@@ -546,6 +554,10 @@ a.video {
 .toolPart {
   max-width: 44px;
   min-width: 44px;
+}
+
+.descript {
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1850px) {
