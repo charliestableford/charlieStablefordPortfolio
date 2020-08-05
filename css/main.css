@@ -258,28 +258,6 @@ span.highlight {
   overflow: hidden;
 }
 
-#dribbbleShots li:before {
-  position: absolute;
-  content: "";
-  width: 1000px;
-  height: 1000px;
-  background: rgba(0, 0, 0, 0.6);
-  top: 0;
-  left: 0;
-  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.5s;
-  opacity: 0;
-  transform: translate(-46%, -111%) rotate(60deg);
-}
-
-#dribbbleShots li img {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: -2;
-  height: 100%;
-}
-
 #dribbbleShots .title {
   position: absolute;
   bottom: 25px;
