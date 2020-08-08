@@ -399,6 +399,25 @@ span.highlight {
   padding-right: 70px;
 }
 
+.CTABtm {
+  background: #f13b39;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 1.25em;
+  align-items: center;
+  width: 350px;
+  height: 70px;
+  z-index: 2;
+  position: relative;
+}
+
+.CTABtm > p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .social {
   padding-left: 2%;
   max-width: 60px;
@@ -566,6 +585,10 @@ a.video {
 
 .descript {
   margin-bottom: 20px;
+}
+
+.middle {
+  text-align: center;
 }
 
 @media (max-width: 1990px) {
