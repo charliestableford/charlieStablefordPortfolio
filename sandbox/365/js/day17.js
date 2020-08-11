@@ -1,13 +1,24 @@
 var client_id = '0e3f58d633e541118f6eb2be87b35789'; 
-var client_secret = '97b691f3d3114a998c94634fb29327f9'; 
 var redirect_uri = 'https://www.charliestableford.com';
 var scopes = 'currently-playing';
 
+var user_id='rachael.stableford';
+var token = 'Bearer';
+var endpoint=`https://api.spotify.com/v1/users/${user_id}/`
 
-{
-    "access_token": "BQA6dFPLyVSz7hLWoRUtoEsPWbXM5yDH3tUtZBZexhn9y8qSH1uKVeJAd___NT2ibJl4slD3u2p4QGh5hSYeKWSoEj5BXaX7h_wchX21yFtYciANHewbuqirmo7zw9TNaa_TuK2XIKZPZK6MNGKzXXSy3EhK",
-    "token_type": "Bearer",
-    "expires_in": 3600,
-    "refresh_token": "AQDhToambnrD_hWVJXEwceokFWb8NYtdYdClIhWG5vIEviFfVfTd6qvGoJPxWsd792fdT1UAWwIeQfUTxCeqBgDb-RIRqN7-e3_U2Rc1NHGootbrqpgyyRqLeffsN16aeIk",
-    "scope": ""
-}
+
+
+async function spotifyConnect(){
+
+    let endpoint = ``;
+
+      const response = await fetch(endpoint)
+      const data = await response.json();
+    //   console.log(data);
+     
+    return data;
+} 
+
+
+curl -H "Authorization: Basic MGUzZjU4ZDYzM2U1NDExMThmNmViMmJlODdiMzU3ODk6OWQzMmI5MDE2M2VlNDY5MTgxZjc5MjljOThjOTZmY2U=" -d grant_type=authorization_code -d code=MQCbtKe...44KN -d redirect_uri=https%3A%2F%2Fwww.charliestableford.com https://accounts.spotify.com/api/token
+
