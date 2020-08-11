@@ -533,6 +533,14 @@ a.video {
   display: none;
 }
 
+.top {
+  font-size: 20px;
+}
+
+.emoji {
+  font-size: 40px;
+}
+
 .fa-umbrella-beach {
   color: #2a2a2a;
 }
