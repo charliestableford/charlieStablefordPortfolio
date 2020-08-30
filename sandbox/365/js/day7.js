@@ -1,6 +1,5 @@
 console.log('working');
 
-
 const display = document.querySelector('.display');
 const button = document.querySelector('button');
 const color = document.querySelector('.box');
@@ -21,11 +20,8 @@ function createHex(){
 return hex;
 }
 
-
-
 function returnColor(hex){
     console.log(hex);
-  
 }
 
 // on click place the outcome of createHex in display.

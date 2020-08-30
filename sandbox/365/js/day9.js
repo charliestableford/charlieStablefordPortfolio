@@ -102,7 +102,7 @@ function totalLay(){
 //     // yourHourlyRate * 4 = amount of yearly chores
 //     let total = (chickenCost * 3) + coop + (((chores * 7)*yourHourlyRate)*2) + ((yourHourlyRate *4)*2) + ((feed *12)*2);
 //     console.log(`the total for your backyard chick is $${total}`);
-// }
+// } chicken
 
 function storeBoughtTotal(){
     // total amount of organic eggs over 2 years

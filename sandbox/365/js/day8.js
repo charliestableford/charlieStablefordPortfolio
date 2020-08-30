@@ -22,11 +22,8 @@ function displayArr(){
         
         button.addEventListener('click', adding)
     })
-
     // arr.forEach(fruit => console.log(fruit));
-
     // arr.forEach(fruit => after.innerHTML = fruit);
-
 }
 
 function adding(e){
