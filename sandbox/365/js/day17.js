@@ -31,6 +31,6 @@ async function spotifyConnect(){
 }
 
 
-// curl -H "Authorization: Bearer BQAXv9oPPcFr1Mq-bUFE-p74gEN_ZOwPJmFpXG8XaXd2bvc2IXSBT9oo7lw9dozsJPZ06WG3eAFRUN0HZTuOB2Yn0vIt6DlzRI7g6DyJs533J1YK6KAJ9kEi_cRQWEs2tCsqcSFhZTYwl3Gh3JlQ7jC4iiokoVf8Q5Ld45GfuBPtjqB6yQ" https://api.spotify.com/v1/me
-
+// curl -H "Authorization: Bearer BQDvPHA-p7V4Ueb6sDCqwC6ewDiNuyMn5rj6Dsu5TYqXayXAs0Z743lLJbBuigMnGwKuWgpMS6LOydgIC9nzVtFBn7TvYM9kECvCclmaD2SeMXf5FIW2rBbqSfqvBuNYuzFYkB_PEdR2B_8IQdPzrVLgColCohemCtq_7cFwAllnUh2hge21n_Hh-e6p" https://api.spotify.com/v1/me
+// steps for this: 
 
