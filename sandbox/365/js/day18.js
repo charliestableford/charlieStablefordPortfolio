@@ -9,6 +9,10 @@ function handleClick(e){
     // console.log(e);
     let counting = counter++;
     console.log(counting); 
+
+    if(counter == 2){
+        alert('done');
+    }
 }
 
 btn.addEventListener('click', handleClick);
