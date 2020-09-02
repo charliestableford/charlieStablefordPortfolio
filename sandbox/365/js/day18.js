@@ -5,13 +5,14 @@ console.log('btn');
 
 let counter = 0;
 const items = JSON.parse(localStorage.getItem('items'));
+localStorage.setItem('items', JSON.stringify(counter));
 
 function handleClick(e){
     // console.log(e);
     let counting = counter++;
     console.log(counting); 
 
-    localStorage.setItem('items', JSON.stringify(counter));
+    
         
        
     if(counter > 1){
