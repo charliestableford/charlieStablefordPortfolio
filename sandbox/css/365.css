@@ -84,12 +84,6 @@ img:hover {
   opacity: .5;
 }
 
-.row {
-  display: flex;
-  padding: 0 10px;
-}
-
-/* Four column layout */
 .column {
   display: flex;
   flex: 80%;

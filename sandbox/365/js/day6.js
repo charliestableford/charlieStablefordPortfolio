@@ -9,12 +9,9 @@ function handleClick(event){
         const { id } = event.currentTarget;
         console.log(`you clicked ${id}`);
 
-        
         // add style to each clicked.
         bigPic.style.display = 'block';
         awesome.style.display = 'block';
-        
-  
     }
 
 
