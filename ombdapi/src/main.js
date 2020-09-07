@@ -1,8 +1,7 @@
-
 // GLOBAL VARIABLES
 const searchUpdate = document.querySelector('.searchUpdate');
 const searchBtn = document.querySelector('.searchBtn');
-const nominationsUL = document.querySelector('.nominations');
+const nominationsUL = document.querySelector('.nomContainer');
 const movieList = document.querySelector('.movieInfo');
 const finished = document.querySelector('.banner');
 const count = document.querySelector('.count');
@@ -18,7 +17,7 @@ let nomItem;
 let counter = 0;
 
 const key = `406fb5b1`;
-const title = `duck`;
+const title = `net`;
     
 // INPUT SEARCH HANDLER
 function searchInputHandler(e) {
@@ -32,8 +31,6 @@ async function ApiHandler(title) {
     const response = await fetch(`https://www.omdbapi.com/?apikey=${key}&s=${title}`);
     const searching = await response.json();
     if (searching.Response === "True") {
-        // let search = [];
-        // search.push(searching);
         console.log(searching.Search);
         renderMovies(searching.Search);
     } else {
@@ -174,40 +171,18 @@ function addToLocalstorage(movieID) {
     localStorage.setItem('nominated', JSON.stringify(nomItem));
 }
 
-// function openModal(e) {
-//     console.log(e);
-//     if(e.target.classList.contains('poster')){
-//         console.log('poster');
-//     }
-// }
-
 Element.prototype.isOverflowing = function(){
     return this.scrollWidth > this.clientWidth;
    
 }
-
-function addArrow(){
-    setTimeout( function() {
-    if(movieList.isOverflowing()){
-        console.log('overflow');
-        arrow.innerHTML = `<i class="fas fa-arrow-right"></i>`;
-
-    } else {
-        console.log('not overflowing');
-        arrow.innerHTML = ``;
-    }
-},500)
-}
  
-
 document.addEventListener('DOMContentLoaded', checkLocalStorage);
 document.addEventListener('DOMContentLoaded', ApiHandler(title));
-document.addEventListener('DOMContentLoaded', addArrow);
 window.addEventListener('click', removal);
 window.addEventListener('click', nominate);
 searchUpdate.addEventListener('keyup', searchInputHandler);
 searchBtn.addEventListener('click', searchInputHandler);
 clearnNom.addEventListener('click', clearLocalStorage);
-// window.addEventListener('click', openModal);
+
 
 
