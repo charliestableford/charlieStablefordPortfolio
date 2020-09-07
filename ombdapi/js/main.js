@@ -185,4 +185,3 @@ searchBtn.addEventListener('click', searchInputHandler);
 clearnNom.addEventListener('click', clearLocalStorage);
 
 
-
