@@ -14,7 +14,7 @@ async function spotifyConnect(){
     //   console.log(data);
      
     return data;
-} 
+} //
 
 // https://accounts.spotify.com/en/authorize?client_id=0e3f58d633e541118f6eb2be87b35789&response_type=code&redirect_uri=https:%2F%2Fwww.charliestableford.com&scope=user-read-currently-playing user-read-private user-read-email user-read-playback-state playlist-read-private
 
