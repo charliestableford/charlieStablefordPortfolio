@@ -68,6 +68,10 @@ a.download {
   font-size: 1.75em;
 }
 
+.purpose {
+  width: 80%;
+}
+
 .bold {
   font-weight: 700;
 }
@@ -89,4 +93,13 @@ a.download {
   text-decoration: none;
   list-style: none;
   color: #507399;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+.footer {
+  margin-top: 2%;
+  text-align: center;
 }
