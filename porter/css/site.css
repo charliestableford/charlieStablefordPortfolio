@@ -105,22 +105,11 @@ a.download {
 }
 
 @media (max-width: 414px) {
-  a.downloadTwo {
-    border: none;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  a.downloadTwo:hover {
-    transform: scale(1.05);
-    background: #152C53;
-    color: white;
+  .noMobile {
+    display: none;
   }
   .download {
     display: none;
-  }
-  a.download {
-    text-decoration: none;
-    color: #152C53;
   }
   .list > ul > li {
     list-style: none;
