@@ -1,0 +1,93 @@
+//colours
+$darkBlue: #152C53;
+$yellow: #F9C33E;
+$medBlue: #507399;
+$lightBlue: #89BDE6;
+$rob :'Roboto', sans-serif;
+
+.wrapper{
+    margin: 5%;
+    color: $darkBlue;
+    font-family: $rob;
+    font-size: 1.2em;
+    
+
+}
+
+a.downloadTwo{
+    text-decoration: none;  
+    color: $darkBlue;
+    transition: transform .5s ease-in-out;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid $darkBlue;
+    border-radius: 100px;
+    margin-right: 5px;
+}
+
+a.downloadTwo:hover{
+    transform: scale(1.05);
+    background: $darkBlue;
+    color: white;
+}
+
+.download{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+      padding: 10px 20px 10px 20px;
+    border: 1px solid $darkBlue;
+    border-radius: 100px;
+    transition: transform .5s ease-in-out;
+}
+
+a.download{
+    text-decoration: none;  
+    color: $darkBlue;
+}
+
+.download:hover{
+    transform: scale(1.05);
+    background: $darkBlue;
+    color: white;
+}
+
+.vid{
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px solid $yellow;
+    width: 70%;
+    line-height: 1.5;
+}
+
+
+.left{
+    font-size: .75em;
+    text-transform: uppercase; display: flex;
+}
+
+.right{
+    width: 75%;
+   
+}
+
+.description{
+    font-size: 1.75em;
+    
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.cLink{
+    text-decoration: none;
+    color: $darkBlue;
+}
+
+.vidDescript{
+    margin-top: 5%;
+}
