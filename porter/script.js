@@ -16,7 +16,7 @@ function setHTML(){
         `;
 
     purpose.innerHTML = `
-        The purpose of this interface is to allow Porter to see an overview of the steps taken during the challenge as well as see the final video of the finished design.<br><br> 
+        The purpose of this interface is to allow you folks to see an overview of the steps taken during the challenge as well as see the final video of the finished design.<br><br> 
     `;
 
     list.innerHTML = `
