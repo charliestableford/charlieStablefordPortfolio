@@ -118,13 +118,14 @@ a.download{
 @media(max-width: 414px) {
 
 a.downloadTwo{
-    text-decoration: none;  
+    // text-decoration: none;  
     color: $darkBlue;
     transition: transform .5s ease-in-out;
     padding: 10px 20px 10px 20px;
     border: 1px solid $darkBlue;
     border-radius: 100px;
     margin-right: 5px;
+    font-weight: 700;
 }
 
 a.downloadTwo:hover{
@@ -134,14 +135,7 @@ a.downloadTwo:hover{
 }
 
 .download{
-    position: fixed;
-    right: 20px;
-    top: 50px;
-      padding: 10px 20px 10px 20px;
-    border: 1px solid $darkBlue;
-    border-radius: 100px;
-    transition: transform .5s ease-in-out;
-    transform: rotate(90deg);
+    display: none;
 }
 
 a.download{
