@@ -12,7 +12,7 @@ function setHTML(){
     `;
 
     descript.innerHTML = `
-        <span class="bold">Hello Porter team!</span><br><br> Welcome to <a href="./index.html" class="cLink">Charlie Stableford's</a> redesign challenge.<br><br> 
+        <span class="bold">Hello Porter team!</span><br><br> Welcome to Charlie Stableford's redesign challenge.<br><br> 
         `;
 
     purpose.innerHTML = `
@@ -21,7 +21,6 @@ function setHTML(){
 
     list.innerHTML = `
     <ul>
-    <li><span>Defining challenge (steps)</span></li>
     <li><span class="left">01 - Context</span><span class="right">What and why is this a problem? Emphasize with the user.</span></li>
     <li><span  class="left">02 - Challenge goals</span><span class="right"> Set goals and microgoals for the challenge. This is done in order to stay on task.</span></li>
     <li><span class="left">03 - Assumptions and constraints</span><span class="right">Setting out assumptions made that affect the outcome of the testing. Listing constraints that may affect or alter testing.</span></li>
