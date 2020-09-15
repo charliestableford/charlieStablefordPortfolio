@@ -46,7 +46,7 @@ a.download {
   text-align: center;
 }
 
-li {
+.list > ul > li {
   list-style: none;
   padding: 50px 0px 50px 0px;
   border-bottom: 1px solid #F9C33E;
@@ -79,4 +79,14 @@ li {
 
 .vidDescript {
   margin-top: 5%;
+}
+
+.research {
+  font-size: 1.2em;
+}
+
+.rLink {
+  text-decoration: none;
+  list-style: none;
+  color: #507399;
 }
