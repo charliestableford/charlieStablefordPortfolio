@@ -115,3 +115,38 @@ a.download{
     text-align: center;
 }
 
+@media(max-width: 414px) {
+
+a.downloadTwo{
+    text-decoration: none;  
+    color: $darkBlue;
+    transition: transform .5s ease-in-out;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid $darkBlue;
+    border-radius: 100px;
+    margin-right: 5px;
+}
+
+a.downloadTwo:hover{
+    transform: scale(1.05);
+    background: $darkBlue;
+    color: white;
+}
+
+.download{
+    position: fixed;
+    right: 20px;
+    top: 50px;
+      padding: 10px 20px 10px 20px;
+    border: 1px solid $darkBlue;
+    border-radius: 100px;
+    transition: transform .5s ease-in-out;
+    transform: rotate(90deg);
+}
+
+a.download{
+    text-decoration: none;  
+    color: $darkBlue;
+}
+}
+
