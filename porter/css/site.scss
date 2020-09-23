@@ -24,6 +24,17 @@ a.downloadTwo{
     margin-right: 5px;
 }
 
+.deck{
+    color: $darkBlue;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid $darkBlue;
+    margin-top: 30px;
+    border-radius: 100px;
+    position: fixed;
+    right: 5px;
+}
+
 a.downloadTwo:hover{
     transform: scale(1.05);
     background: $darkBlue;
@@ -66,7 +77,8 @@ a.download{
 
 .left{
     font-size: .75em;
-    text-transform: uppercase; display: flex;
+    text-transform: uppercase; 
+    display: flex;
 }
 
 .right{
