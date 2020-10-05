@@ -586,6 +586,10 @@ a.video {
   opacity: .5;
 }
 
+.opacity {
+  opacity: .5;
+}
+
 .toolPart {
   max-width: 60px;
   min-width: 60px;
@@ -597,6 +601,17 @@ a.video {
 
 .middle {
   text-align: center;
+}
+
+.lock {
+  position: absolute;
+  margin: 20px;
+  min-height: 50px;
+  max-height: 50px;
+}
+
+.noCurse {
+  cursor: default;
 }
 
 @media (max-width: 1990px) {
